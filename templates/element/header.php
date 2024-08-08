@@ -13,7 +13,8 @@
                                 <li><a href="<?php echo HTTP_ROOT;?>">Home</a></li>
                                 <li><a href="<?php echo HTTP_ROOT;?>about-us">About</a></li>
                                 <li>
-                                    <a href="javascript:void(0)">Services <i class="fa-solid fa-angle-down"></i></a>
+                                    <a href="<?php echo HTTP_ROOT;?>services">Services <i
+                                            class="fa-solid fa-angle-down"></i></a>
                                     <ul class="dropdown-padding">
                                         <?php if(!empty($getServices)){?>
                                         <?php foreach($getServices as $service){?>

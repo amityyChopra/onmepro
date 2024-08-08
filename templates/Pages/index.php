@@ -14,8 +14,8 @@
                     <p data-aos="fade-left" data-aos-duretion="1000">We are passionate and obsessed with executing and
                         building strategies that help businesses to reach their true potential. </p>
                     <div class="btn-area" data-aos="fade-left" data-aos-duretion="1200">
-                        <a href="contact.html" class="header-btn4 btn2">Start Ranking Now</a>
-                        <a href="contact.html" class="header-btn5">Contact Now</a>
+                        <a href="<?php echo HTTP_ROOT?>contact" class="header-btn4 btn2">Start Ranking Now</a>
+                        <a href="<?php echo HTTP_ROOT?>contact" class="header-btn5">Contact Now</a>
                     </div>
                 </div>
             </div>

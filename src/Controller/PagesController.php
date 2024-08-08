@@ -94,6 +94,9 @@ class PagesController extends AppController
     public function contact(){
         
     }
+    public function services(){
+        
+    }
    
     public function viewService($slug){
         $getService = $this->fetchTable("Services")->find()->where(["slug"=>$slug])->first();
