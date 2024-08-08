@@ -141,95 +141,25 @@
             </div>
         </div>
         <div class="row">
+            <?php if(!empty($getServices)){?>
+            <?php foreach($getServices as $service){?>
             <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duretion="800">
                 <div class="service2-boxarea">
                     <div class="icons">
-                        <img src="<?php echo HTTP_ROOT;?>assets/img/3.png" alt="">
+                        <img src="<?php echo HTTP_ROOT;?>assets/img/<?php echo $service["img_file"]?>" alt="">
                     </div>
                     <div class="space32"></div>
                     <div class="content">
-                        <a href="javascript:void(0)">Social Media Management</a>
-                        <p>Engage with your followers with refreshing content on social media and generate more
-                            awareness and demand for your product or services.
+                        <a href="javascript:void(0)"><?php echo $service["service_title"]?></a>
+                        <p><?php echo $service["content"]?>
                         </p>
                     </div>
                 </div>
             </div>
+            <?php }?>
+            <?php }?>
 
-            <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duretion="1000">
-                <div class="service2-boxarea">
-                    <div class="icons">
-                        <img src="<?php echo HTTP_ROOT;?>assets/img/4.png" alt="">
-                    </div>
-                    <div class="space32"></div>
-                    <div class="content">
-                        <a href="javascript:void(0)">Search Engine Optimization</a>
-                        <p>Boost your online visibility by strengthening the search engine rankings and witness organic
-                            growth like never before with our top-tier SEO strategies.
-                        </p>
-                    </div>
-                </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duretion="1200">
-                <div class="service2-boxarea">
-                    <div class="icons">
-                        <img src="<?php echo HTTP_ROOT;?>assets/img/1.png" alt="">
-                    </div>
-                    <div class="space32"></div>
-                    <div class="content">
-                        <a href="javascript:void(0)">Pay Per Click Campaigns</a>
-                        <p>With our traffic and lead generation PPC services, we shoot your brand's visibility to
-                            enhance the sales and promotional goals of your products or services.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duretion="800">
-                <div class="service2-boxarea">
-                    <div class="icons">
-                        <img src="<?php echo HTTP_ROOT;?>assets/img/6.png" alt="">
-                    </div>
-                    <div class="space32"></div>
-                    <div class="content">
-                        <a href="javascript:void(0)">Content Marketing</a>
-                        <p>Enhance your brand identity with our engaging digital content solutions encompassing
-                            everything from planning, creation, publishing and distribution to targeted audience.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duretion="1000">
-                <div class="service2-boxarea">
-                    <div class="icons">
-                        <img src="<?php echo HTTP_ROOT;?>assets/img/5-1.png" alt="">
-                    </div>
-                    <div class="space32"></div>
-                    <div class="content">
-                        <a href="javascript:void(0)">Event Promotion</a>
-                        <p>Reach out to intended audiences across all relevant channels to maximize the participation of
-                            visitors, exhibitors and sponsors in your conferences and exhibitions.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duretion="1200">
-                <div class="service2-boxarea">
-                    <div class="icons">
-                        <img src="<?php echo HTTP_ROOT;?>assets/img/2.png" alt="">
-                    </div>
-                    <div class="space32"></div>
-                    <div class="content">
-                        <a href="javascript:void(0)"> Influencer Marketing</a>
-                        <p>Supercharge your brand awareness and promote your products & services with right
-                            collaborations, integrated approach and fair presentation.
-                        </p>
-                    </div>
-                </div>
-            </div>
             <!-- <div class="col-lg-12">
                 <div class="space30"></div>
                 <div class="btn-area1 text-center" data-aos="fade-up" data-aos-duretion="1200">

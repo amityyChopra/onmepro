@@ -37,7 +37,7 @@
     <div class="preloader preloader5">
         <div class="loading-container">
             <div class="loading"></div>
-            <div id="loading-icon"><img src="assets/img/logo/preloader5.png" alt=""></div>
+            <div id="loading-icon"><img src="assets/img/logo/AnimatedLogo-300x152.gif" alt=""></div>
         </div>
     </div>
     <!--===== PRELOADER ENDS =======-->

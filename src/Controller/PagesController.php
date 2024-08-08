@@ -74,6 +74,7 @@ class PagesController extends AppController
     public function index(){
         $getBlogs = $this->fetchTable("Blogs")->find()->order(["date_added"=>"desc"])->limit(2);
         $this->set(compact("getBlogs"));
+
     }
 
     public function viewBlog($seoUrl){
@@ -86,4 +87,24 @@ class PagesController extends AppController
 
         $this->set(compact("getBlog","pageTitle","metaTitle","metaDescription","keywords"));
     }
+
+    public function about(){
+
+    }
+    public function contact(){
+        
+    }
+   
+    public function viewService($slug){
+        $getService = $this->fetchTable("Services")->find()->where(["slug"=>$slug])->first();
+
+        $pageTitle = $getService["service_title"];
+       
+
+        $this->set(compact("getService"));
+    }
+    public function allBlogs(){
+        
+    }
+
 }

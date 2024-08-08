@@ -43,6 +43,10 @@ class AppController extends Controller
 
         $this->loadComponent('Flash');
 
+
+        $getServices = $this->fetchTable("Services")->find()->where(["status"=>1]);
+        $this->set(compact("getServices"));
+
         //
         /*
          * Enable the following component for recommended CakePHP form protection settings.
