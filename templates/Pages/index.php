@@ -257,7 +257,8 @@
             <div class="col-lg-7 m-auto">
                 <div class="blog-header-area heading6 text-center">
                     <h5>Our Blog</h5>
-                    <h2 class="text-anime-style-3">5 Effective Strategies For Boosting Your Website Traffic</h2>
+                    <h2 class="text-anime-style-3">Latest updates on effective online promotion and digital maketing
+                    </h2>
                 </div>
             </div>
         </div>
@@ -297,7 +298,7 @@
                     <div class="row">
                         <div class="col-lg-5">
                             <div class="cta2-header heading6">
-                                <h2 class="text-anime-style-3">Ready to Take Your SEO To The Next Level</h2>
+                                <h2 class="text-anime-style-3">Ready to Take Your Online Presence To The Next Level</h2>
                                 <p data-aos="fade-up" data-aos-duretion="1200">Effective SEO strategies not only
                                     elevate a website's visibility but also drive targeted traffic, enhance user
                                     experience,</p>

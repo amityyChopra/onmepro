@@ -4,8 +4,9 @@
             <div class="col-lg-3 col-md-6">
                 <div class="footer-logo-area">
                     <img style="width:40%" src="<?php echo HTTP_ROOT;?>assets/img/logo/AnimatedLogo-300x152.gif" alt="">
-                    <p>By optimizing content, leveraging relevant keywords, and adhering to best practices,
-                        businesses can secure prominent position (SEO)</p>
+                    <p>A premier Digital Marketing Agency having more than 18 years of experience in Online Promotion,
+                        SEO, SMO, PPC Services.
+                    </p>
                     <ul>
                         <li><a href="#"><img src="<?php echo HTTP_ROOT;?>assets/img/icons/facebook3.svg" alt=""></a>
                         </li>
