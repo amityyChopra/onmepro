@@ -85,6 +85,10 @@ class PagesController extends AppController
         $metaDescription = $getBlog["meta_description"];
         $keywords = $getBlog["meta_keyword"];
 
+        $recentPosts = $this->fetchTable("Blogs")->find()->where(["id !="=>$getBlog["id"]])->order(["date_added"=>"desc"])->limit(5);
+        $this->set(compact("recentPosts"));
+
+
         $this->set(compact("getBlog","pageTitle","metaTitle","metaDescription","keywords"));
     }
 

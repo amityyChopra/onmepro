@@ -508,6 +508,7 @@ if ($('.text-anime-style-1').length) {
   }
 
 });
+
 //========== PRELOADER AREA ============= //
 
 /*-------------------- 16. progressbar ----------------------------*/
@@ -548,3 +549,7 @@ if($('.reveal').length){gsap.registerPlugin(ScrollTrigger);let revealContainers=
 //========== PARALLAX AREA ============= //
 
 })(jQuery);
+
+function openBox(){
+  $("#quote").modal("show");
+}

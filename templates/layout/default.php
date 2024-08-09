@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="<?php echo HTTP_ROOT;?>assets/css/plugins/slick-slider.css">
     <link rel="stylesheet" href="<?php echo HTTP_ROOT;?>assets/css/plugins/nice-select.css">
     <link rel="stylesheet" href="<?php echo HTTP_ROOT;?>assets/css/main.css">
+    <link rel="stylesheet" href="<?php echo HTTP_ROOT;?>assets/css/intlTelInput.css">
 
     <!--=====  JS SCRIPT LINK =======-->
     <script src="<?php echo HTTP_ROOT;?>assets/js/plugins/jquery-3-6-0.min.js"></script>
@@ -84,6 +85,70 @@
     <script src="<?php echo HTTP_ROOT;?>assets/js/plugins/circle-progress.js"></script>
     <script src="<?php echo HTTP_ROOT;?>assets/js/main.js"></script>
 
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="<?php echo HTTP_ROOT;?>assets/js/intlTelInput.min.js"></script>
+
+
+
+    <div id="quote" class="modal fade contact-main-inner-area sp1" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Get a Quote</h4>
+                    <button type="button" style="border:none;box-shadow:none;background:#fff;" class="close"
+                        data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="contact-form-area" style="padding-top:0px;">
+                        <?php echo $this->Form->create(null,["id"=>"quote-form"])?>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="input-area">
+                                    <input type="text" placeholder="Full Name" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="input-area">
+                                    <input type="email" placeholder="Email Address" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="input-area">
+                                    <input type="tel" id="phone" placeholder="Phone Number">
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="input-area">
+                                    <textarea placeholder="Your Message"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 text-center">
+                                <div class="input-area">
+                                    <button type="submit" class="header-btn4 btn2 g-recaptcha"
+                                        data-sitekey="6LezDSMqAAAAACRJRjsFUUbr2XYhS-soCeQxN7OX" data-callback='onSubmit'
+                                        data-action='submit'>Get In Touch <span><i
+                                                class="fa-solid fa-arrow-right"></i></span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+    const input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+        utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@23.8.1/build/js/utils.js",
+    });
+    </script>
+    <script>
+    function onSubmit(token) {
+        document.getElementById("quote-form").submit();
+    }
+    </script>
 </body>
 
 </html>

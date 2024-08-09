@@ -1,7 +1,6 @@
-<div class="about-header-area"
-    style="background-image: url(<?php echo HTTP_ROOT;?>assets/img/bg/inner-header.png); background-repeat: no-repeat; background-size: cover; background-position: center;">
-    <img src="<?php echo HTTP_ROOT;?>assets/img/elements/elements1.png" alt="" class="elements1 aniamtion-key-1">
-    <img src="<?php echo HTTP_ROOT;?>assets/img/elements/star2.png" alt="" class="star2 keyframe5">
+<div class="about-header-area">
+    <img src="<?php echo HTTP_ROOT;?>assets/img/bg/about-bg1.png" alt="" class="elements1 aniamtion-key-1">
+    <img src="<?php echo HTTP_ROOT;?>assets/img/bg/about-bg2.png" alt="" class="star2">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 m-auto">
@@ -21,16 +20,22 @@
                 <div class="blog-sidebar-area">
                     <div class="posts-area">
                         <h3>Recent Post</h3>
+                        <?php if(!empty($recentPosts)){?>
+                        <?php foreach($recentPosts as $recentPost){?>
                         <div class="post-auhtor-area">
                             <div class="img1">
                                 <img src="<?php echo HTTP_ROOT;?>assets/img/all-images/post-img1.png" alt="">
                             </div>
                             <div class="content">
-                                <a href="#" class="date"><img src="assets/img/icons/calender1.svg" alt="">16 August
-                                    2023</a>
-                                <a href="#" class="head">The Importance of Responsive Web Design in the Mobile Age</a>
+                                <a href="#" class="date"><img
+                                        src="<?php echo HTTP_ROOT;?>assets/img/icons/calender1.svg"
+                                        alt=""><?php echo date("d F Y",strtotime($recentPost["date_added"]));?></a>
+                                <a href="<?php echo HTTP_ROOT."blog/".$recentPost["seo_url"]?>"
+                                    class="head"><?php echo $recentPost["blog_title"]?></a>
                             </div>
                         </div>
+                        <?php }?>
+                        <?php }?>
                     </div>
                     <div class="space32"></div>
 
@@ -41,11 +46,10 @@
                     <div class="tags-area">
                         <ul>
                             <li><a href="javascript:void(0)"><img
-                                        src="<?php echo HTTP_ROOT;?>assets/img/icons/contact1.svg" alt="">Ben
-                                    Stokes</a></li>
+                                        src="<?php echo HTTP_ROOT;?>assets/img/icons/contact1.svg" alt="">Admin</a></li>
                             <li><a href="javascript:void(0)"><img
-                                        src="<?php echo HTTP_ROOT;?>assets/img/icons/calender1.svg" alt="">16
-                                    August 2023</a></li>
+                                        src="<?php echo HTTP_ROOT;?>assets/img/icons/calender1.svg"
+                                        alt=""><?php echo date("d F Y",strtotime($getBlog["date_added"]))?></a></li>
                         </ul>
                     </div>
                     <h2><?php echo $getBlog["blog_title"]?></h2>
@@ -75,22 +79,42 @@
     </div>
 </div>
 <!--===== BLOG AREA ENDS =======-->
-<div class="cta-section-area">
-    <img src="<?php echo HTTP_ROOT;?>assets/img/bg/cta-bg1.png" alt="" class="cta-bg1 aniamtion-key-2">
-    <img src="<?php echo HTTP_ROOT;?>assets/img/bg/cta-bg2.png" alt="" class="cta-bg2 aniamtion-key-1">
+<!--===== CTA AREA STARTS =======-->
+<div class="cta3-section-area">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 m-auto">
-                <div class="cta-header-area text-center sp4 heading2">
-                    <h2>Ready To Take Your SEO To <br class="d-md-block d-none"> The Next Level</h2>
-                    <p>Effective SEO strategies not only elevate a website's visibility but also drive <br
-                            class="d-md-block d-none"> targeted traffic, enhance user experience,</p>
-                    <div class="btn-area text-center">
-                        <a href="<?php echo HTTP_ROOT;?>contact" class="header-btn1">Free Consultation <span><i
-                                    class="fa-solid fa-arrow-right"></i></span></a>
+            <div class="col-lg-12">
+                <div class="cta-author-area">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="cta2-header heading6">
+                                <h2 class="text-anime-style-3">Ready to Take Your Online Presence To The Next Level</h2>
+                                <p data-aos="fade-up" data-aos-duretion="1200">Effective SEO strategies not only
+                                    elevate a website's visibility but also drive targeted traffic, enhance user
+                                    experience,</p>
+                                <div class="space24"></div>
+                                <div class="btn-area" data-aos="fade-up" data-aos-duretion="1400">
+                                    <a href="contact.html" class="header-btn5">Get a Quote Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-4">
+                            <div class="images">
+                                <img src="<?php echo HTTP_ROOT;?>assets/img/elements/elements8.png" alt=""
+                                    class="elements6 aniamtion-key-2">
+                                <img src="<?php echo HTTP_ROOT;?>assets/img/elements/star6.png" alt=""
+                                    class="elements7 keyframe5">
+                                <img src="<?php echo HTTP_ROOT;?>assets/img/bg/cta-bg3.png" alt=""
+                                    class="bg1 aniamtion-key-5">
+                                <img src="<?php echo HTTP_ROOT;?>assets/img/all-images/cta-img1.png" alt=""
+                                    class="cta-img1">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<!--===== CTA AREA ENDS =======-->

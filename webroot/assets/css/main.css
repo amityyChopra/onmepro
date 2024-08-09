@@ -13048,8 +13048,8 @@ html {
   background: var(--ztc-text-text-1);
   position: relative;
   z-index: 1;
-  box-shadow: 0px 4px 48px 0px rgba(0, 0, 0, 0.09);
-  padding: 32px;
+  /* box-shadow: 0px 4px 48px 0px rgba(0, 0, 0, 0.09); */
+  padding: 10px;
 }
 @media (max-width: 767px) {
   .contact-main-inner-area .contact-form-area {

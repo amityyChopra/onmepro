@@ -7,8 +7,7 @@
         <div class="row align-items-center">
             <div class="col-lg-6">
                 <div class="header-main-area heading5">
-                    <h5><img style="width:16px;height:20px;" src="assets/img/logo/AnimatedLogo-300x152.gif"
-                            alt="">Leading SEO and Digital Marketing
+                    <h5>Leading SEO and Digital Marketing
                         Company
                     </h5>
                     <h1 class="text-anime-style-3">Pioneering Online Promotion & Bespoke Digital Marketing Solutions
@@ -16,8 +15,11 @@
                     <p data-aos="fade-left" data-aos-duretion="1000">We are passionate and obsessed with executing and
                         building strategies that help businesses to reach their true potential. </p>
                     <div class="btn-area" data-aos="fade-left" data-aos-duretion="1200">
-                        <a href="<?php echo HTTP_ROOT?>contact-us" class="header-btn4 btn2">Start Ranking Now</a>
-                        <a href="<?php echo HTTP_ROOT?>contact-us" class="header-btn5">Contact Now</a>
+                        <a href="tel:+919811205120" class="header-btn4 btn2"><i
+                                class="fa-solid fa-mobile-screen"></i>&nbsp;
+                            Speak to
+                            our
+                            consultant</a>
                     </div>
                 </div>
             </div>
@@ -74,7 +76,7 @@
 <!--===== TESTIMONIAL AREA ENDS =======-->
 
 <!--===== ABOUT AREA STARTS =======-->
-<div class="about3-section-area sp1">
+<div class="about3-section-area sp1" id="about-us">
     <img src="<?php echo HTTP_ROOT;?>assets/img/bg/about-bg1.png" alt="" class="about-bg1">
     <img src="<?php echo HTTP_ROOT;?>assets/img/bg/about-bg2.png" alt="" class="about-bg2">
     <div class="container">
@@ -133,7 +135,7 @@
 <!--===== ABOUT AREA ENDS =======-->
 
 <!--===== SERVICE AREA STARTS =======-->
-<div class="service3-section-area sp1">
+<div class="service3-section-area sp1" id="services">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 m-auto">
@@ -178,7 +180,7 @@
 
 
 <!--===== WORK AREA STARTS =======-->
-<div class="work4-section-area sp1">
+<div class="work4-section-area sp1" id="choose">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 m-auto">
@@ -254,7 +256,7 @@
 
 
 <!--===== BLOG AREA STARTS =======-->
-<div class="blog3-section-area sp2">
+<div class="blog3-section-area sp2" id="blog">
     <img src="assets/img/bg/about-bg1.png" alt="" class="about-bg1">
     <img src="assets/img/bg/about-bg2.png" alt="" class="about-bg2">
     <div class="container">
@@ -288,7 +290,12 @@
             </div>
             <?php }?>
             <?php }?>
-
+            <div class="col-lg-12">
+                <div class="space30"></div>
+                <div class="btn-area1 text-center aos-init aos-animate" data-aos="fade-up" data-aos-duretion="1200">
+                    <a href="<?php echo HTTP_ROOT;?>blog" class="header-btn5">View More</a>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -309,7 +316,7 @@
                                     experience,</p>
                                 <div class="space24"></div>
                                 <div class="btn-area" data-aos="fade-up" data-aos-duretion="1400">
-                                    <a href="contact.html" class="header-btn5">Get Started Now</a>
+                                    <a href="contact.html" class="header-btn5">Get a Quote Now</a>
                                 </div>
                             </div>
                         </div>

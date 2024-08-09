@@ -1,4 +1,4 @@
-<div class="footer3-section-area">
+<div class="footer3-section-area" id="contact-us">
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-6">
@@ -23,10 +23,11 @@
                 <div class="footer-logo-area1">
                     <h3>About Link</h3>
                     <ul>
-                        <li><a href="<?php echo HTTP_ROOT?>about-us">About Us</a></li>
-                        <li><a href="<?php echo HTTP_ROOT?>services">Services</a></li>
-                        <li><a href="<?php echo HTTP_ROOT?>blog">Our Blog</a></li>
-                        <li><a href="<?php echo HTTP_ROOT?>contact-us">Contact Us</a></li>
+                        <li><a href="<?php echo HTTP_ROOT?>#about-us">About Us</a></li>
+                        <li><a href="<?php echo HTTP_ROOT?>#services">Services</a></li>
+                        <li><a href="<?php echo HTTP_ROOT?>#choose">Why Us</a></li>
+                        <li><a href="<?php echo HTTP_ROOT?>#blog">Blog</a></li>
+
                     </ul>
                 </div>
             </div>
