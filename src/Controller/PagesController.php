@@ -107,7 +107,14 @@ class PagesController extends AppController
         $this->set(compact("getService"));
     }
     public function allBlogs(){
-        
+        $latestPost = $this->fetchTable("Blogs")->find()->order(["date_added"=>"desc"])->first();
+        $this->set(compact("latestPost"));
+
+        $remainingPosts = $this->fetchTable("Blogs")->find()->where(["id !="=>$latestPost["id"]])->order(["date_added"=>"desc"]);
+        $remainingPosts = $this->paginate($remainingPosts);
+        $this->set(compact("remainingPosts"));
+
+
     }
     public function terms(){
 
