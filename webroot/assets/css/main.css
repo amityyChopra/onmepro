@@ -14455,8 +14455,7 @@ html {
   }
 }
 .slider3-section-area .slider-images-area .img1 img {
-  height: 38px;
-  width: 120px;
+  height: 100px;
   -o-object-fit: contain;
   object-fit: contain;
 }

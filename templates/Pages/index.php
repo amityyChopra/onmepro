@@ -7,15 +7,17 @@
         <div class="row align-items-center">
             <div class="col-lg-6">
                 <div class="header-main-area heading5">
-                    <h5><img src="assets/img/icons/logo-icons2.svg" alt="">Leading SEO and Digital Marketing Company
+                    <h5><img style="width:16px;height:20px;" src="assets/img/logo/AnimatedLogo-300x152.gif"
+                            alt="">Leading SEO and Digital Marketing
+                        Company
                     </h5>
                     <h1 class="text-anime-style-3">Pioneering Online Promotion & Bespoke Digital Marketing Solutions
                     </h1>
                     <p data-aos="fade-left" data-aos-duretion="1000">We are passionate and obsessed with executing and
                         building strategies that help businesses to reach their true potential. </p>
                     <div class="btn-area" data-aos="fade-left" data-aos-duretion="1200">
-                        <a href="<?php echo HTTP_ROOT?>contact" class="header-btn4 btn2">Start Ranking Now</a>
-                        <a href="<?php echo HTTP_ROOT?>contact" class="header-btn5">Contact Now</a>
+                        <a href="<?php echo HTTP_ROOT?>contact-us" class="header-btn4 btn2">Start Ranking Now</a>
+                        <a href="<?php echo HTTP_ROOT?>contact-us" class="header-btn5">Contact Now</a>
                     </div>
                 </div>
             </div>
@@ -39,30 +41,33 @@
 <div class="slider3-section-area sp5">
     <div class="container">
         <div class="row align-items-center">
-            <!-- <div class="col-lg-2">
+            <div class="col-lg-2">
                 <div class="sldier-head">
-                    <p>Trusted by <br class="d-lg-block d-none"> Top Companies</p>
+                    <p>Trusted by <br class="d-lg-block d-none"> Client</p>
                 </div>
-            </div> -->
-            <!-- <div class="col-lg-10">
+            </div>
+            <div class="col-lg-10">
                 <div class="slider-images-area owl-carousel">
                     <div class="img1">
-                        <img src="assets/img/elements/brand-img1.png" alt="">
+                        <img src="<?php echo HTTP_ROOT;?>img/client-1.png" alt="">
                     </div>
                     <div class="img1">
-                        <img src="assets/img/elements/brand-img2.png" alt="">
+                        <img src="<?php echo HTTP_ROOT;?>img/client-2.png" alt="">
                     </div>
                     <div class="img1">
-                        <img src="assets/img/elements/brand-img3.png" alt="">
+                        <img src="<?php echo HTTP_ROOT;?>img/client-3.png" alt="">
                     </div>
                     <div class="img1">
-                        <img src="assets/img/elements/brand-img4.png" alt="">
+                        <img src="<?php echo HTTP_ROOT;?>img/client-4.png" alt="">
                     </div>
                     <div class="img1">
-                        <img src="assets/img/elements/brand-img5.png" alt="">
+                        <img src="<?php echo HTTP_ROOT;?>img/client-5.png" alt="">
+                    </div>
+                    <div class="img1">
+                        <img src="<?php echo HTTP_ROOT;?>img/client-6.jpeg" alt="">
                     </div>
                 </div>
-            </div> -->
+            </div>
         </div>
     </div>
 </div>

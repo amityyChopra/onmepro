@@ -109,5 +109,11 @@ class PagesController extends AppController
     public function allBlogs(){
         
     }
+    public function terms(){
+
+    }
+    public function privacyPolicy(){
+        
+    }
 
 }

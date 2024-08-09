@@ -5,7 +5,7 @@
                 <div class="col-lg-12">
                     <div class="header-elements">
                         <div class="site-logo">
-                            <a href="index.html"><img style="width:35%"
+                            <a href="<?php echo HTTP_ROOT;?>"><img style="width:35%"
                                     src="<?php echo HTTP_ROOT;?>assets/img/logo/AnimatedLogo-300x152.gif" alt=""></a>
                         </div>
                         <div class="main-menu">
