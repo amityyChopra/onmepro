@@ -128,17 +128,22 @@
                                     experience,</p>
                                 <div class="space24"></div>
                                 <div class="btn-area" data-aos="fade-up" data-aos-duretion="1400">
-                                    <a href="contact.html" class="header-btn5">Get Started Now</a>
+                                    <a href="javascript:void(0)" onclick="openBox()" class="header-btn5">Get a Quote
+                                        Now</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-2"></div>
                         <div class="col-lg-4">
                             <div class="images">
-                                <img src="assets/img/elements/elements8.png" alt="" class="elements6 aniamtion-key-2">
-                                <img src="assets/img/elements/star6.png" alt="" class="elements7 keyframe5">
-                                <img src="assets/img/bg/cta-bg3.png" alt="" class="bg1 aniamtion-key-5">
-                                <img src="assets/img/all-images/cta-img1.png" alt="" class="cta-img1">
+                                <img src="<?php echo HTTP_ROOT?>assets/img/elements/elements8.png" alt=""
+                                    class="elements6 aniamtion-key-2">
+                                <img src="<?php echo HTTP_ROOT?>assets/img/elements/star6.png" alt=""
+                                    class="elements7 keyframe5">
+                                <img src="<?php echo HTTP_ROOT?>assets/img/bg/cta-bg3.png" alt=""
+                                    class="bg1 aniamtion-key-5">
+                                <img src="<?php echo HTTP_ROOT?>assets/img/all-images/cta-img1.png" alt=""
+                                    class="cta-img1">
                             </div>
                         </div>
                     </div>

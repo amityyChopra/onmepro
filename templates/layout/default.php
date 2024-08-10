@@ -88,7 +88,7 @@
     <script src="https://www.google.com/recaptcha/api.js"></script>
     <script src="<?php echo HTTP_ROOT;?>assets/js/intlTelInput.min.js"></script>
 
-
+    <script src="<?php echo HTTP_ROOT;?>assets/js/sweetalert.js"></script>
 
     <div id="quote" class="modal fade contact-main-inner-area sp1" role="dialog">
         <div class="modal-dialog">
@@ -100,37 +100,41 @@
                         data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <div class="contact-form-area" style="padding-top:0px;">
-                        <?php echo $this->Form->create(null,["id"=>"quote-form"])?>
+                    <div class="contact-form-area" id="successForm" style="padding-top:0px;">
+                        <?php echo $this->Form->create(null,["id"=>"quote-form",'url'=>["action"=>"quoteRequest"]])?>
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="input-area">
-                                    <input type="text" placeholder="Full Name" required>
+                                    <input type="text" name="full_name" placeholder="Full Name" required>
                                 </div>
                             </div>
                             <div class="col-lg-12">
                                 <div class="input-area">
-                                    <input type="email" placeholder="Email Address" required>
+                                    <input type="email" name="email" placeholder="Email Address" required>
                                 </div>
                             </div>
                             <div class="col-lg-12">
                                 <div class="input-area">
-                                    <input type="tel" id="phone" placeholder="Phone Number">
+                                    <input type="hidden" id="country" name="country" />
+                                    <input type="tel" name="mobile" id="phone" placeholder="Phone Number">
                                 </div>
                             </div>
                             <div class="col-lg-12">
                                 <div class="input-area">
-                                    <textarea placeholder="Your Message"></textarea>
+                                    <textarea rows="10" name="message" placeholder="Your Message"></textarea>
                                 </div>
                             </div>
                             <div class="col-lg-12 text-center">
                                 <div class="input-area">
-                                    <button type="submit" class="header-btn4 btn2 g-recaptcha"
+                                    <button type="button" class="header-btn4 btn2 g-recaptcha"
                                         data-sitekey="6LezDSMqAAAAACRJRjsFUUbr2XYhS-soCeQxN7OX" data-callback='onSubmit'
                                         data-action='submit'>Get In Touch <span><i
                                                 class="fa-solid fa-arrow-right"></i></span></button>
                                 </div>
                             </div>
+                        </div>
+                        <div class="row text-center">
+
                         </div>
                     </div>
                 </div>
@@ -138,15 +142,45 @@
 
         </div>
     </div>
+
     <script>
     const input = document.querySelector("#phone");
     window.intlTelInput(input, {
         utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@23.8.1/build/js/utils.js",
     });
+
+    var input2 = $('#phone');
+    var country = $('#country');
+    var iti = intlTelInput(input2.get(0))
+    input2.on('countrychange', function(e) {
+        country.val(iti.getSelectedCountryData().iso2);
+    });
     </script>
     <script>
     function onSubmit(token) {
-        document.getElementById("quote-form").submit();
+        $.ajax({
+            url: "<?php echo HTTP_ROOT;?>quote-request",
+            type: "POST",
+            data: $("#quote-form").serialize(),
+            success: function(res) {
+
+                $("#quote").modal("hide");
+
+                if (res == "success") {
+                    Swal.fire({
+                        icon: "success",
+                        title: "Thank You",
+                        text: "We have received you request.",
+                    });
+                } else {
+                    Swal.fire({
+                        icon: "error",
+                        title: "Oops...",
+                        text: "Please check the filled details!",
+                    });
+                }
+            }
+        });
     }
 
     $(".close").click(function() {

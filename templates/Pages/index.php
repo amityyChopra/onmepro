@@ -103,16 +103,18 @@
                             <li><img src="<?php echo HTTP_ROOT;?>assets/img/icons/check1.svg" alt="">Powered by
                                 technology
                             </li>
-                            <li><img src="<?php echo HTTP_ROOT;?>assets/img/icons/check1.svg" alt="">Diversified domain
-                                experience
-                            </li>
-                        </ul>
-                        <ul>
                             <li><img src="<?php echo HTTP_ROOT;?>assets/img/icons/check1.svg" alt="">Commitment to
                                 quality
                             </li>
-                            <li><img src="<?php echo HTTP_ROOT;?>assets/img/icons/check1.svg" alt="">Deliver with
+
+                        </ul>
+                        <ul>
+
+                            <li><img src="<?php echo HTTP_ROOT;?>assets/img/icons/check1.svg" alt="">Delivering with
                                 excellence</li>
+                            <li><img src="<?php echo HTTP_ROOT;?>assets/img/icons/check1.svg" alt="">Diversified domain
+                                experience
+                            </li>
                         </ul>
                     </div>
                     <div class="images-area" data-aos="fade-left" data-aos-duretion="1200">
@@ -316,7 +318,8 @@
                                     experience,</p>
                                 <div class="space24"></div>
                                 <div class="btn-area" data-aos="fade-up" data-aos-duretion="1400">
-                                    <a href="contact.html" class="header-btn5">Get a Quote Now</a>
+                                    <a href="javascript:void(0)" onclick="openBox()" class="header-btn5">Get a Quote
+                                        Now</a>
                                 </div>
                             </div>
                         </div>

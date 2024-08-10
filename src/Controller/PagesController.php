@@ -21,6 +21,9 @@ use Cake\Http\Exception\ForbiddenException;
 use Cake\Http\Exception\NotFoundException;
 use Cake\Http\Response;
 use Cake\View\Exception\MissingTemplateException;
+use Cake\Mailer\Mailer;
+use Cake\Mailer\TransportFactory;
+
 
 /**
  * Static content controller
@@ -152,5 +155,95 @@ class PagesController extends AppController
       
 
     }
+
+    public function quoteRequest(){
+
+        if($this->request->is("post")){
+            $data = $this->request->getData();
+
+            if (isset($_POST['g-recaptcha-response'])) {
+                $captcha = $_POST['g-recaptcha-response'];
+
+                $leads = $this->fetchTable("Leads");
+
+                $secret   = '6LezDSMqAAAAAK3PXDI3eNLqt6HOrtSpmMHcLQMB';
+                $action = "submit";
+                // call curl to POST request
+                $ch = curl_init();
+                curl_setopt($ch, CURLOPT_URL,"https://www.google.com/recaptcha/api/siteverify");
+                curl_setopt($ch, CURLOPT_POST, 1);
+                curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query(array('secret' => $secret, 'response' => $captcha)));
+                curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                $response = curl_exec($ch);
+                curl_close($ch);
+                $arrResponse = json_decode($response, true);
+
+                if($arrResponse["success"] == '1' && $arrResponse["action"] == $action && $arrResponse["score"] >= 0.5) {
+
+                    if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+                        $IP = $_SERVER['HTTP_CLIENT_IP'];
+                    } else if (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+                        $IP = $_SERVER['HTTP_X_FORWARDED_FOR'];
+                    } else {
+                        $IP = $_SERVER['REMOTE_ADDR']; 
+                    }
+
+
+                    $newLead = $leads->newEmptyEntity();
+                    $leadData["full_name"] = $data["full_name"];
+                    $leadData["email"] = $data["email"];
+                    $leadData["mobile"] = $data["mobile"];
+                    $leadData["message"] = $data["message"];
+                    $leadData["ip_address"] = $IP;
+                    $leadData["country_code"] = $data["country"];
+                    $leadData["browser"] = $_SERVER["HTTP_USER_AGENT"];
+                    $leadData["date_added"] = date("Y-m-d H:i:s");
+                    $newLead = $leads->patchEntity($newLead,$leadData);
+                    $leads->save($newLead);
+
+
+                    $content = "Hello, <br/><br/>";
+                    $content .="Please check the below query posted on website: <br/><br/>";
+                    
+                    $content .= "<table border='1' cellspacing='0' cellpadding='5'><thead><th>Full Name</th><th>Email</th><th>Country Code</th><th>Mobile</th><th>Message</th></thead><tbody>";
+                    $content .= "<tr><td>".$data["full_name"]."</td><td>".$data["email"]."</td><td>".$data["country"]."</td><td>".$data["mobile"]."</td><td>".$data["message"]."</td></tr>";
+                    
+                    $content .= "</tbody></table>";
+
+
+                    TransportFactory::setConfig('gmail', [
+                        'host' => 'smtp.gmail.com',
+                        'port' => 587,
+                        'username' => 'cv@jobgully.com',
+                        'password' => 'vzwouodzjhlxescb',
+                        'className' => 'Smtp',
+                        'tls' => true
+                    ]);
+
+                    $email_subject = "ONMEPRO - Wesbite Query / ".date("d F Y");
+
+                    $mailer = new Mailer();
+                    $mailer->setProfile(['from' => 'cv@jobgully.com', 'transport' => 'gmail'])
+                    ->setEmailFormat('html')
+                    ->setTo("chopra.amit9@gmail.com")
+                    ->setSubject($email_subject)
+                    ->deliver($content);
+
+
+
+                    $message = "success";
+                } else {
+                    $message = "error";
+                }
+            } else {
+                $message = "error";
+            }
+            echo $message;
+            die;
+        }
+        
+    }
+
+
 
 }
