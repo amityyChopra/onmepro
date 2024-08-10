@@ -1,5 +1,4 @@
-<div class="about-header-area"
-   >
+<div class="about-header-area">
     <img src="<?php echo HTTP_ROOT;?>assets/img/bg/about-bg1.png" alt="" class="elements1 aniamtion-key-1">
     <img src="<?php echo HTTP_ROOT;?>assets/img/bg/about-bg2.png" alt="" class="star2">
     <div class="container">

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php if(isset($pageTitle)){echo $pageTitle;}else{?>SEO - Digital Marketing Agency<?php }?></title>
+    <title><?php if(isset($pageTitle)){echo $pageTitle;}else{?>ONMEPRO - Digital Marketing Agency<?php }?></title>
 
     <meta name="description"
         content="<?php if(isset($metaDescription)){echo $metaDescription;}else{?>SEO - Digital Marketing Agency<?php }?>">
@@ -147,6 +147,25 @@
     <script>
     function onSubmit(token) {
         document.getElementById("quote-form").submit();
+    }
+
+    $(".close").click(function() {
+        $("#quote").modal("hide");
+    });
+
+    function subscribeMe() {
+        var emailVal = $("#email_user").val();
+        $.ajax({
+            url: "<?php echo HTTP_ROOT;?>Pages/subscribeMe",
+            type: "GET",
+            data: {
+                email: emailVal
+            },
+            success: function(res) {
+                console.log(res);
+                $("#messageClass").html(res);
+            }
+        })
     }
     </script>
 </body>

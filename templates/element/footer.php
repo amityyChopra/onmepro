@@ -55,9 +55,10 @@
                         <p>Get the latest updates on online marketing by subscribing to our newsletter.</p>
                     </small>
                     <form action="#">
-                        <input type="text" placeholder="Enter Your email">
-                        <button class="header-btn4 btn2"> Subscribe</button>
+                        <input type="email" required id="email_user" placeholder="Enter Your email">
+                        <button class="header-btn4 btn2" type="button" onclick="subscribeMe()"> Subscribe</button>
                     </form>
+                    <div class="col-lg-12" id="messageClass"></div>
                 </div>
             </div>
         </div>

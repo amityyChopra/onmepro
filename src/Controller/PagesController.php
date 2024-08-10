@@ -127,4 +127,30 @@ class PagesController extends AppController
         
     }
 
+    public function subscribeMe(){
+        $email = $_GET["email"];
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            $emailErr = "<span style='color:#f00'>Invalid email format</span>";
+        }else{
+            $subscriber = $this->fetchTable("Subscribers");
+
+            if($subscriber->exists(["email"=>$email])){
+                $emailErr = "<span style='color:#f00'>You are already subscribed</span>";
+            }else{
+                $newSubscriber = $subscriber->newEmptyEntity();
+                $subscriberData["email"] = $email;
+                $subscriberData["subscription_date"] = date("Y-m-d H:i:s");
+                $subscriberData["status"] = 1;
+                $newSubscriber = $subscriber->patchEntity($newSubscriber,$subscriberData);
+                $subscriber->save($newSubscriber);
+                $emailErr = "<span style='color:#28a745;'>You have subscribed successfully</span>";
+            }
+    
+        }
+
+        echo $emailErr; die;
+      
+
+    }
+
 }
