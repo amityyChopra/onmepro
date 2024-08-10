@@ -34,7 +34,7 @@
                                 <div class="space8"></div>
                                 <div class="btn-area">
                                     <a href="<?php echo HTTP_ROOT."blog/".$latestPost["seo_url"]?>"
-                                        class="header-btn1">Read Full Story <span><i
+                                        class="header-btn4 btn2">Read Full Story <span><i
                                                 class="fa-solid fa-arrow-right"></i></span></a>
                                 </div>
                             </div>
