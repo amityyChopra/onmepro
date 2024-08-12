@@ -210,6 +210,19 @@ class PagesController extends AppController
                     $content .= "</tbody></table>";
 
 
+                    $content .= "Full Name: ".$data["full_name"]."<br/>";
+                    $content .= "Email: ".$data["email"]."<br/>";
+                    $content .= "Phone number: ".$data["fullmobile_name"]."<br/>";
+                    $content .= "Message: ".$data["message"]."<br/><br/><br/>";
+
+                    $content .= "Regards,<br/>";
+                    $content .= "ONMEPRO Team <br/>";
+
+                    $content .= "Sender IP: ".$IP;
+                    $content .= "Sender Browser: ".$_SERVER["HTTP_USER_AGENT"];
+
+
+
                     TransportFactory::setConfig('gmail', [
                         'host' => 'smtp.gmail.com',
                         'port' => 587,

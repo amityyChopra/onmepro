@@ -132,7 +132,7 @@
                             </div>
                             <div class="col-lg-12 text-center">
                                 <div class="input-area queryButton">
-                                    <button type="button" class="header-btn4 btn2 g-recaptcha"
+                                    <button type="button" class="header-btn4 btn2 g-recaptcha checkSubmission"
                                         data-sitekey="6LezDSMqAAAAACRJRjsFUUbr2XYhS-soCeQxN7OX" data-callback='onSubmit'
                                         data-action='submit'>Get In Touch <span><i
                                                 class="fa-solid fa-arrow-right"></i></span></button>
@@ -193,6 +193,9 @@
 
     function onSubmit(token) {
 
+        $(".checkSubmission").attr('disabled', 'disabled');
+
+
         $.ajax({
             url: "<?php echo HTTP_ROOT;?>quote-request",
             type: "POST",
@@ -206,9 +209,7 @@
                 $('#phone').val("");
                 $('#message').html("");
 
-                $(".queryButton").html(
-                    '<button type="button" class="header-btn4 btn2 g-recaptcha" data-sitekey="6LezDSMqAAAAACRJRjsFUUbr2XYhS-soCeQxN7OX" data-callback="onSubmit" data-action="submit">Get In Touch <span><i class="fa-solid fa-arrow-right"></i></span></button>'
-                );
+                $(".checkSubmission").removeAttr('disabled');
 
 
                 if (res == "success") {
