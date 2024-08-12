@@ -203,12 +203,7 @@ class PagesController extends AppController
 
                     $content = "Hello, <br/><br/>";
                     $content .="Please check the below query posted on website: <br/><br/>";
-                    
-                    $content .= "<table border='1' cellspacing='0' cellpadding='5'><thead><th>Full Name</th><th>Email</th><th>Country Code</th><th>Mobile</th><th>Message</th></thead><tbody>";
-                    $content .= "<tr><td>".$data["full_name"]."</td><td>".$data["email"]."</td><td>".$data["country"]."</td><td>".$data["mobile"]."</td><td>".$data["message"]."</td></tr>";
-                    
-                    $content .= "</tbody></table>";
-
+                 
 
                     $content .= "Full Name: ".$data["full_name"]."<br/>";
                     $content .= "Email: ".$data["email"]."<br/>";
