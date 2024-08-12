@@ -159,7 +159,7 @@
     var country = $('#country');
     var iti = intlTelInput(input2.get(0))
     input2.on('countrychange', function(e) {
-        country.val(iti.getSelectedCountryData().iso2);
+        country.val(iti.getSelectedCountryData().dialCode);
     });
     </script>
     <script>

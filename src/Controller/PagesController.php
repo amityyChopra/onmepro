@@ -194,7 +194,7 @@ class PagesController extends AppController
                     $leadData["mobile"] = $data["mobile"];
                     $leadData["message"] = $data["message"];
                     $leadData["ip_address"] = $IP;
-                    $leadData["country_code"] = $data["country"];
+                    $leadData["country_code"] = "+".$data["country"];
                     $leadData["browser"] = $_SERVER["HTTP_USER_AGENT"];
                     $leadData["date_added"] = date("Y-m-d H:i:s");
                     $newLead = $leads->patchEntity($newLead,$leadData);
@@ -207,7 +207,7 @@ class PagesController extends AppController
 
                     $content .= "Full Name: ".$data["full_name"]."<br/>";
                     $content .= "Email: ".$data["email"]."<br/>";
-                    $content .= "Phone number: ".$data["fullmobile_name"]."<br/>";
+                    $content .= "Phone number: +".$data["country"]." ".$data["mobile"]."<br/>";
                     $content .= "Message: ".$data["message"]."<br/><br/><br/>";
 
                     $content .= "Regards,<br/>";
@@ -219,21 +219,13 @@ class PagesController extends AppController
 
 
 
-                    TransportFactory::setConfig('gmail', [
-                        'host' => 'smtp.gmail.com',
-                        'port' => 587,
-                        'username' => 'cv@jobgully.com',
-                        'password' => 'vzwouodzjhlxescb',
-                        'className' => 'Smtp',
-                        'tls' => true
-                    ]);
+                 
 
                     $email_subject = "ONMEPRO - Wesbite Query /".$data["full_name"]." / ".date("d F Y");
 
-                    $mailer = new Mailer();
-                    $mailer->setProfile(['from' => 'cv@jobgully.com', 'transport' => 'gmail'])
-                    ->setEmailFormat('html')
-                    ->setTo("arihant@aritone.com")
+                    $mailer = new Mailer('gmail');
+                    $mailer->setEmailFormat('html')
+                    ->setTo("chopra.amit9@gmail.com")
                     ->setSubject($email_subject)
                     ->deliver($content);
 
