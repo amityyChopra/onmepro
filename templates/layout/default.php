@@ -249,6 +249,13 @@
             }
         })
     }
+    (function($) {
+        $(window).on("load", function() {
+            $(document).on("click", ".hash-nav", function() {
+                $(".menu-close").trigger("click");
+            });
+        });
+    })(jQuery);
     </script>
 </body>
 
