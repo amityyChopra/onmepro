@@ -177,8 +177,6 @@ class PagesController extends AppController
                 curl_close($ch);
                 $arrResponse = json_decode($response, true);
 
-                pry($arrResponse);
-
                 if($arrResponse["success"] == '1' && $arrResponse["action"] == $action && $arrResponse["score"] >= 0.5) {
 
                     if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
