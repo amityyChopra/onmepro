@@ -160,7 +160,6 @@ class PagesController extends AppController
 
         if($this->request->is("post")){
             $data = $this->request->getData();
-
             if (isset($_POST['g-recaptcha-response'])) {
                 $captcha = $_POST['g-recaptcha-response'];
 
@@ -177,6 +176,8 @@ class PagesController extends AppController
                 $response = curl_exec($ch);
                 curl_close($ch);
                 $arrResponse = json_decode($response, true);
+
+                pry($arrResponse);
 
                 if($arrResponse["success"] == '1' && $arrResponse["action"] == $action && $arrResponse["score"] >= 0.5) {
 
@@ -233,10 +234,10 @@ class PagesController extends AppController
 
                     $message = "success";
                 } else {
-                    $message = "error";
+                    $message = "form-error";
                 }
             } else {
-                $message = "error";
+                $message = "captcha-error";
             }
             echo $message;
             die;

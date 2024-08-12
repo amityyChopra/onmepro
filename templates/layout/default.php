@@ -193,47 +193,45 @@
 
     function onSubmit(token) {
 
-        if ($('#quote-form').valid()) {
-
-            $(".queryButton").html(
-                '<button type="button" class="header-btn4 btn2">Submitting... <span><i class="fa-solid fa-arrow-right"></i></span></button>'
-            );
+        $(".queryButton").html(
+            '<button type="button" class="header-btn4 btn2 g-recaptcha" data-sitekey="6LezDSMqAAAAACRJRjsFUUbr2XYhS-soCeQxN7OX" data-callback="onSubmit" data-action="submit">Submitting... <span><i class="fa-solid fa-arrow-right"></i></span></button>'
+        );
 
 
-            $.ajax({
-                url: "<?php echo HTTP_ROOT;?>quote-request",
-                type: "POST",
-                data: $("#quote-form").serialize(),
-                success: function(res) {
+        $.ajax({
+            url: "<?php echo HTTP_ROOT;?>quote-request",
+            type: "POST",
+            data: $("#quote-form").serialize(),
+            success: function(res) {
 
-                    $("#quote").modal("hide");
+                $("#quote").modal("hide");
 
-                    $('#full_name').val("");
-                    $('#email').val("");
-                    $('#phone').val("");
-                    $('#message').html("");
+                $('#full_name').val("");
+                $('#email').val("");
+                $('#phone').val("");
+                $('#message').html("");
 
-                    $(".queryButton").html(
-                        '<button type="button" class="header-btn4 btn2 g-recaptcha" data-sitekey="6LezDSMqAAAAACRJRjsFUUbr2XYhS-soCeQxN7OX" data-callback="onSubmit" data-action="submit">Get In Touch <span><i class="fa-solid fa-arrow-right"></i></span></button>'
-                    );
+                $(".queryButton").html(
+                    '<button type="button" class="header-btn4 btn2 g-recaptcha" data-sitekey="6LezDSMqAAAAACRJRjsFUUbr2XYhS-soCeQxN7OX" data-callback="onSubmit" data-action="submit">Get In Touch <span><i class="fa-solid fa-arrow-right"></i></span></button>'
+                );
 
 
-                    if (res == "success") {
-                        Swal.fire({
-                            icon: "success",
-                            title: "Thank You",
-                            text: "We have received you request.",
-                        });
-                    } else {
-                        Swal.fire({
-                            icon: "error",
-                            title: "Oops...",
-                            text: "Please check the filled details!",
-                        });
-                    }
+                if (res == "success") {
+                    Swal.fire({
+                        icon: "success",
+                        title: "Thank You",
+                        text: "We have received you request.",
+                    });
+                } else {
+                    Swal.fire({
+                        icon: "error",
+                        title: "Oops...",
+                        text: "Please check the filled details!",
+                    });
                 }
-            });
-        }
+            }
+        });
+
     }
 
     $(".close").click(function() {
