@@ -213,7 +213,8 @@ class PagesController extends AppController
                     $content .= "Regards,<br/>";
                     $content .= "ONMEPRO Team <br/>";
 
-                    $content .= "Sender IP: ".$IP;
+                    $content .= "Sender IP: ".$IP."<br/>";
+                    $content .= "Query Time: ".date("d F Y h:i A")."<br/>";
                     $content .= "Sender Browser: ".$_SERVER["HTTP_USER_AGENT"];
 
 
@@ -227,7 +228,7 @@ class PagesController extends AppController
                         'tls' => true
                     ]);
 
-                    $email_subject = "ONMEPRO - Wesbite Query / ".date("d F Y");
+                    $email_subject = "ONMEPRO - Wesbite Query /".$data["full_name"]." / ".date("d F Y");
 
                     $mailer = new Mailer();
                     $mailer->setProfile(['from' => 'cv@jobgully.com', 'transport' => 'gmail'])
