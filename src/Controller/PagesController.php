@@ -225,7 +225,7 @@ class PagesController extends AppController
 
                     $mailer = new Mailer('gmail');
                     $mailer->setEmailFormat('html')
-                    ->setTo("chopra.amit9@gmail.com")
+                    ->setTo("arihant@aritone.com")
                     ->setSubject($email_subject)
                     ->deliver($content);
 
