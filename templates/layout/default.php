@@ -107,13 +107,13 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="input-area">
-                                    <input type="text" name="full_name" class="required" placeholder="Full Name *"
-                                        required>
+                                    <input type="text" name="full_name" id="full_name" class="required"
+                                        placeholder="Full Name *" required>
                                 </div>
                             </div>
                             <div class="col-lg-12">
                                 <div class="input-area">
-                                    <input type="email" class="required email" name="email"
+                                    <input type="email" class="required email" id="email" name="email"
                                         placeholder="Email Address *" required>
                                 </div>
                             </div>
@@ -126,7 +126,8 @@
                             </div>
                             <div class="col-lg-12">
                                 <div class="input-area">
-                                    <textarea rows="10" name="message" placeholder="Your Message"></textarea>
+                                    <textarea rows="10" name="message" id="message"
+                                        placeholder="Your Message"></textarea>
                                 </div>
                             </div>
                             <div class="col-lg-12 text-center">
@@ -206,6 +207,12 @@
                 success: function(res) {
 
                     $("#quote").modal("hide");
+
+                    $('#full_name').val("");
+                    $('#email').val("");
+                    $('#phone').val("");
+                    $('#message').html("");
+
                     $(".queryButton").html(
                         '<button type="button" class="header-btn4 btn2 g-recaptcha" data-sitekey="6LezDSMqAAAAACRJRjsFUUbr2XYhS-soCeQxN7OX" data-callback="onSubmit" data-action="submit">Get In Touch <span><i class="fa-solid fa-arrow-right"></i></span></button>'
                     );
@@ -243,6 +250,7 @@
             },
             success: function(res) {
                 console.log(res);
+                $('#email_user').val("");
                 $("#messageClass").html(res);
             }
         })
