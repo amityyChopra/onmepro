@@ -16520,5 +16520,12 @@ html {
 .case-lista-area .case-list ul li img {
   margin: 0 8px 0 0;
 }
+input.error {
+  border-color: #f00 !important;
+}
+.errorTxt {
+  padding: 2%;
+  color: #f00;
+}
 
 /*============= CASE STUDY CSS AREA ENDS ===============*/ /*# sourceMappingURL=main.css.map */

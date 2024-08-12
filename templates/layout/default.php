@@ -89,6 +89,7 @@
     <script src="<?php echo HTTP_ROOT;?>assets/js/intlTelInput.min.js"></script>
 
     <script src="<?php echo HTTP_ROOT;?>assets/js/sweetalert.js"></script>
+    <script src="<?php echo HTTP_ROOT;?>assets/js/validate.js"></script>
 
     <div id="quote" class="modal fade contact-main-inner-area sp1" role="dialog">
         <div class="modal-dialog">
@@ -99,24 +100,28 @@
                     <button type="button" style="border:none;box-shadow:none;background:#fff;" class="close"
                         data-dismiss="modal">&times;</button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body" style="padding-top:0">
                     <div class="contact-form-area" id="successForm" style="padding-top:0px;">
+                        <div class="errorTxt"></div>
                         <?php echo $this->Form->create(null,["id"=>"quote-form",'url'=>["action"=>"quoteRequest"]])?>
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="input-area">
-                                    <input type="text" name="full_name" placeholder="Full Name" required>
+                                    <input type="text" name="full_name" class="required" placeholder="Full Name *"
+                                        required>
                                 </div>
                             </div>
                             <div class="col-lg-12">
                                 <div class="input-area">
-                                    <input type="email" name="email" placeholder="Email Address" required>
+                                    <input type="email" class="required email" name="email"
+                                        placeholder="Email Address *" required>
                                 </div>
                             </div>
                             <div class="col-lg-12">
                                 <div class="input-area">
                                     <input type="hidden" id="country" name="country" />
-                                    <input type="tel" name="mobile" id="phone" placeholder="Phone Number">
+                                    <input type="tel" name="mobile" class="required number" id="phone"
+                                        placeholder="Phone Number *">
                                 </div>
                             </div>
                             <div class="col-lg-12">
@@ -125,7 +130,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-12 text-center">
-                                <div class="input-area">
+                                <div class="input-area queryButton">
                                     <button type="button" class="header-btn4 btn2 g-recaptcha"
                                         data-sitekey="6LezDSMqAAAAACRJRjsFUUbr2XYhS-soCeQxN7OX" data-callback='onSubmit'
                                         data-action='submit'>Get In Touch <span><i
@@ -157,30 +162,71 @@
     });
     </script>
     <script>
-    function onSubmit(token) {
-        $.ajax({
-            url: "<?php echo HTTP_ROOT;?>quote-request",
-            type: "POST",
-            data: $("#quote-form").serialize(),
-            success: function(res) {
-
-                $("#quote").modal("hide");
-
-                if (res == "success") {
-                    Swal.fire({
-                        icon: "success",
-                        title: "Thank You",
-                        text: "We have received you request.",
-                    });
-                } else {
-                    Swal.fire({
-                        icon: "error",
-                        title: "Oops...",
-                        text: "Please check the filled details!",
-                    });
-                }
+    var validator = $('#quote-form').validate({
+        rules: {
+            full_name: {
+                required: true
+            },
+            email: {
+                required: true
+            },
+            mobile: {
+                required: true
             }
-        });
+        },
+        messages: {
+            full_name: {
+                required: "Full name is required"
+            },
+            email: {
+                required: "Email is required"
+            },
+            mobile: {
+                required: "Phone number is required"
+            }
+        },
+        errorElement: 'div',
+        errorLabelContainer: '.errorTxt'
+    });
+
+
+    function onSubmit(token) {
+
+        if ($('#quote-form').valid()) {
+
+            $(".queryButton").html(
+                '<button type="button" class="header-btn4 btn2">Submitting... <span><i class="fa-solid fa-arrow-right"></i></span></button>'
+            );
+
+
+            $.ajax({
+                url: "<?php echo HTTP_ROOT;?>quote-request",
+                type: "POST",
+                data: $("#quote-form").serialize(),
+                success: function(res) {
+
+                    $("#quote").modal("hide");
+                    $(".queryButton").html(
+                        '<button type="button" class="header-btn4 btn2 g-recaptcha" data-sitekey="6LezDSMqAAAAACRJRjsFUUbr2XYhS-soCeQxN7OX" data-callback="onSubmit" data-action="submit">Get In Touch <span><i class="fa-solid fa-arrow-right"></i></span></button>'
+                    );
+
+
+                    if (res == "success") {
+                        Swal.fire({
+                            icon: "success",
+                            title: "Thank You",
+                            text: "We have received you request.",
+                        });
+                    } else {
+                        Swal.fire({
+                            icon: "error",
+                            title: "Oops...",
+                            text: "Please check the filled details!",
+                        });
+                    }
+                }
+            });
+        }
     }
 
     $(".close").click(function() {
