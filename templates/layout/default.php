@@ -193,11 +193,6 @@
 
     function onSubmit(token) {
 
-        $(".queryButton").html(
-            '<button type="button" class="header-btn4 btn2 g-recaptcha" data-sitekey="6LezDSMqAAAAACRJRjsFUUbr2XYhS-soCeQxN7OX" data-callback="onSubmit" data-action="submit">Submitting... <span><i class="fa-solid fa-arrow-right"></i></span></button>'
-        );
-
-
         $.ajax({
             url: "<?php echo HTTP_ROOT;?>quote-request",
             type: "POST",
