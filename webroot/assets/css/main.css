@@ -16524,8 +16524,11 @@ input.error {
   border-color: #f00 !important;
 }
 .errorTxt {
-  padding: 2%;
+  padding: 0 2%;
   color: #f00;
+}
+.modal-header button {
+  font-size: 1.4rem;
 }
 
 /*============= CASE STUDY CSS AREA ENDS ===============*/ /*# sourceMappingURL=main.css.map */
