@@ -176,7 +176,7 @@ class PagesController extends AppController
                 ->setSubject($email_subject)
                 ->deliver($content);
 
-                $emailErr = "<span style='color:#28a745;'>You have been` subscribed successfully</span>";
+                $emailErr = "<span style='color:#28a745;'>You have been subscribed successfully</span>";
             }
     
         }
