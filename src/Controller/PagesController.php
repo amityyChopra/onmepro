@@ -124,7 +124,7 @@ class PagesController extends AppController
 
     }
     public function terms(){
-
+      
     }
     public function privacyPolicy(){
         
@@ -145,7 +145,27 @@ class PagesController extends AppController
                 $subscriberData["subscription_date"] = date("Y-m-d H:i:s");
                 $subscriberData["status"] = 1;
                 $newSubscriber = $subscriber->patchEntity($newSubscriber,$subscriberData);
-                $subscriber->save($newSubscriber);
+                $recordsaved = $subscriber->save($newSubscriber);
+
+                $recordId = time()."-".$recordsaved->id;
+                
+
+                $newsletter = $this->fetchTable("EmailNewsletters");
+                $getNewsletter = $newsletter->get(1);
+
+
+                $content = str_replace('$savedRecordId',$recordId,$getNewsletter["content"]);
+
+
+
+                $email_subject = "Newsletter Subscription - ONMEPRO";
+
+                $mailer = new Mailer('gmail');
+                $mailer->setEmailFormat('html')
+                ->setTo($email)
+                ->setSubject($email_subject)
+                ->deliver($content);
+
                 $emailErr = "<span style='color:#28a745;'>You have subscribed successfully</span>";
             }
     
@@ -244,6 +264,20 @@ class PagesController extends AppController
         
     }
 
+    public function unsubscribe(){
+        $recordId = explode("-",$_GET["savedRecordId"]);
+
+        $subscriber = $this->fetchTable("Subscribers");
+
+        $newSubscriber = $subscriber->get($recordId[1]);
+       
+        $subscriberData["unsubscribe_date"] = date("Y-m-d H:i:s");
+        $subscriberData["status"] = 0;
+        $newSubscriber = $subscriber->patchEntity($newSubscriber,$subscriberData);
+        $recordsaved = $subscriber->save($newSubscriber);
+
+
+    }
 
 
 }
