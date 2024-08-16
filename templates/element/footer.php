@@ -36,7 +36,8 @@
                 <div class="footer-logo-area2">
                     <h3>Get in touch</h3>
                     <ul>
-                        <li><a href="mailto"><img src="<?php echo HTTP_ROOT;?>assets/img/icons/email.svg" alt=""><span>
+                        <li><a href="mailto:info@onmepro.com"><img
+                                    src="<?php echo HTTP_ROOT;?>assets/img/icons/email.svg" alt=""><span>
                                     info@onmepro.com</span></a></li>
                         <li><a href="#"><img src="<?php echo HTTP_ROOT;?>assets/img/icons/location.svg"
                                     alt=""><span>Ashok Vihar, Phase - 1,
