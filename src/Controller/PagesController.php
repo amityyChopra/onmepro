@@ -137,8 +137,18 @@ class PagesController extends AppController
         }else{
             $subscriber = $this->fetchTable("Subscribers");
 
-            if($subscriber->exists(["email"=>$email])){
+            if($subscriber->exists(["email"=>$email,"status"=>1])){
                 $emailErr = "<span style='color:#f00'>You are already subscribed</span>";
+            }else if($subscriber->exists(["email"=>$email,"status"=>0])){
+
+                $subscriberDetails = $subscriber->find()->where(["email"=>$email])->first();
+                $newSubscriber = $subscriber->get($subscriberDetails["id"]);
+                $subscriberData["status"] = 1;
+                $newSubscriber = $subscriber->patchEntity($newSubscriber,$subscriberData);
+                $recordsaved = $subscriber->save($newSubscriber);
+
+                $emailErr = "<span style='color:#28a745;'>You have been subscribed again successfully</span>";
+                
             }else{
                 $newSubscriber = $subscriber->newEmptyEntity();
                 $subscriberData["email"] = $email;
@@ -166,7 +176,7 @@ class PagesController extends AppController
                 ->setSubject($email_subject)
                 ->deliver($content);
 
-                $emailErr = "<span style='color:#28a745;'>You have subscribed successfully</span>";
+                $emailErr = "<span style='color:#28a745;'>You have been` subscribed successfully</span>";
             }
     
         }
