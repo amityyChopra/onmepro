@@ -30,7 +30,7 @@
                     <img src="assets/img/elements/star5.png" alt="" class="star5 keyframe5">
                     <div class="img1">
                         <img src="assets/img/bg/header-imgbg3.png" alt="" class="header-imgbg2">
-                        <img src="assets/img/all-images/header-img3.png" alt="">
+                        <img src="<?php echo HTTP_ROOT;?>img/hero-image.png" alt="">
                     </div>
                 </div>
             </div>
@@ -51,22 +51,22 @@
             <div class="col-lg-10">
                 <div class="slider-images-area owl-carousel">
                     <div class="img1">
-                        <img src="<?php echo HTTP_ROOT;?>img/client-1.png" alt="">
+                        <img src="<?php echo HTTP_ROOT;?>img/logo01.png" alt="">
                     </div>
                     <div class="img1">
-                        <img src="<?php echo HTTP_ROOT;?>img/client-2.png" alt="">
+                        <img src="<?php echo HTTP_ROOT;?>img/logo2.png" alt="">
                     </div>
                     <div class="img1">
-                        <img src="<?php echo HTTP_ROOT;?>img/client-3.png" alt="">
+                        <img src="<?php echo HTTP_ROOT;?>img/logo3.png" alt="">
                     </div>
                     <div class="img1">
-                        <img src="<?php echo HTTP_ROOT;?>img/client-4.png" alt="">
+                        <img src="<?php echo HTTP_ROOT;?>img/logo4.png" alt="">
                     </div>
                     <div class="img1">
-                        <img src="<?php echo HTTP_ROOT;?>img/client-5.png" alt="">
+                        <img src="<?php echo HTTP_ROOT;?>img/logo5.png" alt="">
                     </div>
                     <div class="img1">
-                        <img src="<?php echo HTTP_ROOT;?>img/client-6.jpeg" alt="">
+                        <img src="<?php echo HTTP_ROOT;?>img/logo6.png" alt="">
                     </div>
                 </div>
             </div>
@@ -83,7 +83,7 @@
         <div class="row align-items-center">
             <div class="col-lg-6">
                 <div class="about-images-area reveal">
-                    <img src="<?php echo HTTP_ROOT;?>assets/img/all-images/about-img3.png" alt="">
+                    <img src="<?php echo HTTP_ROOT;?>img/aboutus.png" alt="">
                 </div>
             </div>
             <div class="col-lg-6">
@@ -196,7 +196,7 @@
         <div class="row align-items-center">
             <div class="col-lg-6">
                 <div class="work-images reveal">
-                    <img src="assets/img/all-images/work-img2.png" alt="">
+                    <img src="<?php echo HTTP_ROOT;?>img/why-choose-us.png" alt="">
                 </div>
             </div>
             <div class="col-lg-1"></div>
@@ -277,7 +277,7 @@
             <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-duretion="1200">
                 <div class="blog2-author-boxarea">
                     <div class="img1">
-                        <img src="assets/img/all-images/blog-img4.png" alt="">
+                        <img src="<?php echo HTTP_ROOT;?>img/<?php echo $blog["image"]?>" alt="">
                     </div>
                     <div class="blog-content">
                         <a href="#" class="date"><img src="assets/img/icons/calender1.svg"
@@ -329,7 +329,7 @@
                                 <img src="assets/img/elements/elements8.png" alt="" class="elements6 aniamtion-key-2">
                                 <img src="assets/img/elements/star6.png" alt="" class="elements7 keyframe5">
                                 <img src="assets/img/bg/cta-bg3.png" alt="" class="bg1 aniamtion-key-5">
-                                <img src="assets/img/all-images/cta-img1.png" alt="" class="cta-img1">
+                                <img src="<?php echo HTTP_ROOT;?>img/cta-img1.png" alt="" class="cta-img1">
                             </div>
                         </div>
                     </div>
