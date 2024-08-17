@@ -514,8 +514,7 @@
                                     class="elements7 keyframe5">
                                 <img src="<?php echo HTTP_ROOT?>assets/img/bg/cta-bg3.png" alt=""
                                     class="bg1 aniamtion-key-5">
-                                <img src="<?php echo HTTP_ROOT?>assets/img/all-images/cta-img1.png" alt=""
-                                    class="cta-img1">
+                                <img src="<?php echo HTTP_ROOT?>img/cta-img1.png" alt="" class="cta-img1">
                             </div>
                         </div>
                     </div>

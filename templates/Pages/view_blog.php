@@ -24,7 +24,7 @@
                         <?php foreach($recentPosts as $recentPost){?>
                         <div class="post-auhtor-area">
                             <div class="img1">
-                                <img src="<?php echo HTTP_ROOT;?>assets/img/all-images/post-img1.png" alt="">
+                                <img src="<?php echo HTTP_ROOT;?>img/<?php echo $recentPost["image"]?>" alt="">
                             </div>
                             <div class="content">
                                 <a href="#" class="date"><img
@@ -55,7 +55,7 @@
                     <h2><?php echo $getBlog["blog_title"]?></h2>
                     <div class="space34"></div>
                     <div class="img1">
-                        <img src="<?php echo HTTP_ROOT;?>assets/img/all-images/blog-img23.png" alt="">
+                        <img src="<?php echo HTTP_ROOT;?>img/<?php echo $getBlog["image"]?>" alt="">
                     </div>
                     <div class="space24"></div>
                     <p><?php echo nl2br($getBlog["content"]);?></p>
@@ -108,8 +108,7 @@
                                     class="elements7 keyframe5">
                                 <img src="<?php echo HTTP_ROOT?>assets/img/bg/cta-bg3.png" alt=""
                                     class="bg1 aniamtion-key-5">
-                                <img src="<?php echo HTTP_ROOT?>assets/img/all-images/cta-img1.png" alt=""
-                                    class="cta-img1">
+                                <img src="<?php echo HTTP_ROOT?>img/cta-img1.png" alt="" class="cta-img1">
                             </div>
                         </div>
                     </div>
