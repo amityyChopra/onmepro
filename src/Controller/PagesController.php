@@ -244,6 +244,8 @@ class PagesController extends AppController
                     $content .= "ONMEPRO Team <br/>";
 
                     $content .= "Sender IP: ".$IP."<br/>";
+                    date_default_timezone_set('Asia/Kolkata');
+
                     $content .= "Query Time: ".date("d F Y h:i A")."<br/>";
                     $content .= "Sender Browser: ".$_SERVER["HTTP_USER_AGENT"];
 

@@ -92,8 +92,8 @@
                     <h2 class="text-anime-style-3">A premier Digital Marketing Agency having more than 18 years of
                         experience</h2>
                     <p data-aos="fade-left" data-aos-duretion="1000">Data Analysis, Behavioural Patterns and Strategy,
-                        this is the spirit of OnMePro. With a dedicated team of experts armed with the latest tools &
-                        techniques, we specialize in crafting bespoke SEO & digital marketing solutions. With the
+                        this is the spirit of OnMePro. We are a dedicated team of experts armed with the latest tools
+                        and techniques. We specialize in crafting bespoke SEO and digital marketing solutions. With the
                         intersection of unique ideas and technology, we promote your brand to cut through the
                         competition online.
                     </p>
