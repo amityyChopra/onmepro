@@ -7,15 +7,17 @@
                     <p>A premier digital marketing agency with over 18 years of experience in online promotion, SEO
                         services, SMO strategies, PPC campaigns, and content marketing.
                     </p>
-                    <!-- <ul>
-                        <li><a href="#"><img src="<?php echo HTTP_ROOT;?>assets/img/icons/facebook3.svg" alt=""></a>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/company/onmepro"><img
+                                    src="<?php echo HTTP_ROOT;?>assets/img/icons/linkedin2.svg" alt=""></a>
+                        </li>
+                        <!-- <li><a href="#"><img src="<?php echo HTTP_ROOT;?>assets/img/icons/facebook3.svg" alt=""></a>
                         </li>
                         <li><a href="#"><img src="<?php echo HTTP_ROOT;?>assets/img/icons/instagram3.svg" alt=""></a>
                         </li>
-                        <li><a href="#"><img src="<?php echo HTTP_ROOT;?>assets/img/icons/linkedin2.svg" alt=""></a>
-                        </li>
-                        <li><a href="#"><img src="<?php echo HTTP_ROOT;?>assets/img/icons/twitter2.svg" alt=""></a></li>
-                    </ul> -->
+                        
+                        <li><a href="#"><img src="<?php echo HTTP_ROOT;?>assets/img/icons/twitter2.svg" alt=""></a></li> -->
+                    </ul>
                 </div>
             </div>
 
