@@ -8,7 +8,7 @@
                         services, SMO strategies, PPC campaigns, and content marketing.
                     </p>
                     <ul>
-                        <li><a href="https://www.linkedin.com/company/onmepro"><img
+                        <li><a target="_blank" href="https://www.linkedin.com/company/onmepro"><img
                                     src="<?php echo HTTP_ROOT;?>assets/img/icons/linkedin2.svg" alt=""></a>
                         </li>
                         <!-- <li><a href="#"><img src="<?php echo HTTP_ROOT;?>assets/img/icons/facebook3.svg" alt=""></a>
