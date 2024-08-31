@@ -30,6 +30,18 @@
 
     <!--=====  JS SCRIPT LINK =======-->
     <script src="<?php echo HTTP_ROOT;?>assets/js/plugins/jquery-3-6-0.min.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8VQGFGNS7Y"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-8VQGFGNS7Y');
+    </script>
 </head>
 
 <body class="homepage3-body">
