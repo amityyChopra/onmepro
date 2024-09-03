@@ -13,7 +13,7 @@
 
 
     <!--=====FAB ICON=======-->
-    <link rel="shortcut icon" href="<?php echo HTTP_ROOT;?>img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="<?php echo HTTP_ROOT;?>img/favicon.ico" type="image/x-icon">
 
     <!--===== CSS LINK =======-->
     <link rel="stylesheet" href="<?php echo HTTP_ROOT;?>assets/css/plugins/bootstrap.min.css">
