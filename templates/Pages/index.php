@@ -207,7 +207,7 @@
                             <img src="<?php echo HTTP_ROOT;?>assets/img/icons/works-icon1.png" alt="">
                         </div>
                         <div class="content-area">
-                            <a href="case-single.html">Tailored Strategic Solution</a>
+                            <a href="javascript:void(0)">Tailored Strategic Solution</a>
                             <p>We understand that every business is unique. That's why we craft customized strategies
                                 tailored to your specific objectives, audience, and industry.
                             </p>
@@ -219,7 +219,7 @@
                             <img src="<?php echo HTTP_ROOT;?>assets/img/icons/works-icon2.png" alt="">
                         </div>
                         <div class="content-area">
-                            <a href="case-single.html">Transparent Communication</a>
+                            <a href="javascript:void(0)">Transparent Communication</a>
                             <p>We believe in transparent communication and keep you informed every step of the way,
                                 providing detailed reports and insights into your campaign performance.
                             </p>
@@ -231,7 +231,7 @@
                             <img src="<?php echo HTTP_ROOT;?>assets/img/icons/works-icon3.png" alt="">
                         </div>
                         <div class="content-area">
-                            <a href="case-single.html">Multiple Level Monitoring</a>
+                            <a href="javascript:void(0)">Multiple Level Monitoring</a>
                             <p>We believe in the power of data-driven decision-making. Our team monitors your campaign
                                 to stay ahead in ever-evolving field of Online Promotion.
                             </p>
@@ -243,7 +243,7 @@
                             <img src="<?php echo HTTP_ROOT;?>assets/img/icons/works-icon2.png" alt="">
                         </div>
                         <div class="content-area">
-                            <a href="case-single.html">Proven Track Record</a>
+                            <a href="javascript:void(0)">Proven Track Record</a>
                             <p> We've helped businesses of all sizes achieve their digital goals with our data-driven
                                 strategies and personalized approach.
                             </p>

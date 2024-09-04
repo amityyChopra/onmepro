@@ -10,7 +10,7 @@
         content="<?php if(isset($metaDescription)){echo $metaDescription;}else{?>SEO - Digital Marketing Agency<?php }?>">
     <meta name="keywords"
         content="<?php if(isset($keywords)){echo $keywords;}else{?>SEO - Digital Marketing Agency<?php }?>">
-
+    <link rel="canonical" href="https://www.onmepro.com/" />
 
     <!--=====FAB ICON=======-->
     <link rel="icon" href="<?php echo HTTP_ROOT;?>img/favicon.ico" type="image/x-icon">
@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="<?php echo HTTP_ROOT;?>assets/css/plugins/nice-select.css">
     <link rel="stylesheet" href="<?php echo HTTP_ROOT;?>assets/css/main.css">
     <link rel="stylesheet" href="<?php echo HTTP_ROOT;?>assets/css/intlTelInput.css">
+
 
     <!--=====  JS SCRIPT LINK =======-->
     <script src="<?php echo HTTP_ROOT;?>assets/js/plugins/jquery-3-6-0.min.js"></script>
