@@ -23,7 +23,7 @@
 
             <div class="col-lg-2 col-md-6">
                 <div class="footer-logo-area1">
-                    <h3>About Link</h3>
+                    <h3>About link</h3>
                     <ul>
                         <li><a href="<?php echo HTTP_ROOT?>#about-us">About Us</a></li>
                         <li><a href="<?php echo HTTP_ROOT?>#services">Services</a></li>
@@ -53,7 +53,7 @@
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="footer-logo-area3 footer-logo-area">
-                    <h3 style="margin-bottom:16px;">Subscribe Our Newsletter</h3>
+                    <h3 style="margin-bottom:16px;">Subscribe our newsletter</h3>
                     <small>
                         <p>Get the latest updates on online marketing by subscribing to our newsletter.</p>
                     </small>
