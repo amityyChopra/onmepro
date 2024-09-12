@@ -77,7 +77,7 @@ class PagesController extends AppController
     public function index(){
         $getBlogs = $this->fetchTable("Blogs")->find()->order(["date_added"=>"desc"])->limit(2);
 
-        $canonicalUrl = HTTP_ROOT;
+        $canonicalUrl = "https://onmepro.com";
 
         $this->set(compact("getBlogs",'canonicalUrl'));
 
@@ -94,7 +94,7 @@ class PagesController extends AppController
         $recentPosts = $this->fetchTable("Blogs")->find()->where(["id !="=>$getBlog["id"]])->order(["date_added"=>"desc"])->limit(5);
         $this->set(compact("recentPosts"));
 
-        $canonicalUrl = HTTP_ROOT."blog/".$seoUrl;
+        $canonicalUrl = "https://onmepro.com/blog/".$seoUrl;
 
 
         $this->set(compact("getBlog","pageTitle","metaTitle","metaDescription","keywords","canonicalUrl"));
@@ -128,7 +128,7 @@ class PagesController extends AppController
 
         $pageTitle  = "Blog - ONMEPRO";
 
-        $canonicalUrl = HTTP_ROOT."blog";
+        $canonicalUrl = "https://onmepro.com/blog";
         $this->set(compact("canonicalUrl","pageTitle"));
 
 
@@ -137,14 +137,14 @@ class PagesController extends AppController
 
         $pageTitle  = "Terms of Use - ONMEPRO";
 
-        $canonicalUrl = HTTP_ROOT."terms-of-use";
+        $canonicalUrl = "https://onmepro.com/terms-of-use";
         $this->set(compact("canonicalUrl","pageTitle"));
     }
     public function privacyPolicy(){
 
         $pageTitle  = "Privacy Policy - ONMEPRO";
 
-        $canonicalUrl = HTTP_ROOT."privacy-policy";
+        $canonicalUrl = "https://onmepro.com/privacy-policy";
         $this->set(compact("canonicalUrl","pageTitle"));
     }
 
