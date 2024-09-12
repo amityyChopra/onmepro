@@ -76,7 +76,10 @@ class PagesController extends AppController
 
     public function index(){
         $getBlogs = $this->fetchTable("Blogs")->find()->order(["date_added"=>"desc"])->limit(2);
-        $this->set(compact("getBlogs"));
+
+        $canonicalUrl = HTTP_ROOT;
+
+        $this->set(compact("getBlogs",'canonicalUrl'));
 
     }
 
@@ -91,12 +94,14 @@ class PagesController extends AppController
         $recentPosts = $this->fetchTable("Blogs")->find()->where(["id !="=>$getBlog["id"]])->order(["date_added"=>"desc"])->limit(5);
         $this->set(compact("recentPosts"));
 
+        $canonicalUrl = HTTP_ROOT."blog/".$seoUrl;
 
-        $this->set(compact("getBlog","pageTitle","metaTitle","metaDescription","keywords"));
+
+        $this->set(compact("getBlog","pageTitle","metaTitle","metaDescription","keywords","canonicalUrl"));
     }
 
     public function about(){
-
+        
     }
     public function contact(){
         
@@ -124,10 +129,12 @@ class PagesController extends AppController
 
     }
     public function terms(){
-      
+        $canonicalUrl = HTTP_ROOT."terms-of-use";
+        $this->set(compact("canonicalUrl"));
     }
     public function privacyPolicy(){
-        
+        $canonicalUrl = HTTP_ROOT."privacy-policy";
+        $this->set(compact("canonicalUrl"));
     }
 
     public function subscribeMe(){

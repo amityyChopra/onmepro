@@ -10,13 +10,7 @@
         content="<?php if(isset($metaDescription)){echo $metaDescription;}else{?>SEO - Digital Marketing Agency<?php }?>">
     <meta name="keywords"
         content="<?php if(isset($keywords)){echo $keywords;}else{?>SEO - Digital Marketing Agency<?php }?>">
-    <link rel="canonical" href="https://www.onmepro.com/" />
-
-
-    <link rel="canonical" href="https://www.onmepro.com/terms-of-use" />
-    <link rel="canonical" href="https://www.onmepro.com/privacy-policy" />
-    <link rel="canonical" href="https://www.onmepro.com/blog/evolution-timeline-of-seo-smo-and-ppc" />
-    <link rel="canonical" href="https://www.onmepro.com/blog/future-of-digital-marketing-ai-and-more" /> 
+    <link rel="canonical" href="<?php if(isset($canonicalUrl)){echo $canonicalUrl;}else{?>https://www.onmepro.com/<?php }?>" />
 
     <!--=====FAB ICON=======-->
     <link rel="icon" href="<?php echo HTTP_ROOT;?>img/favicon.ico" type="image/x-icon">
