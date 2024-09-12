@@ -126,15 +126,26 @@ class PagesController extends AppController
         $remainingPosts = $this->paginate($remainingPosts);
         $this->set(compact("remainingPosts"));
 
+        $pageTitle  = "Blog - ONMEPRO";
+
+        $canonicalUrl = HTTP_ROOT."blog";
+        $this->set(compact("canonicalUrl","pageTitle"));
+
 
     }
     public function terms(){
+
+        $pageTitle  = "Terms of Use - ONMEPRO";
+
         $canonicalUrl = HTTP_ROOT."terms-of-use";
-        $this->set(compact("canonicalUrl"));
+        $this->set(compact("canonicalUrl","pageTitle"));
     }
     public function privacyPolicy(){
+
+        $pageTitle  = "Privacy Policy - ONMEPRO";
+
         $canonicalUrl = HTTP_ROOT."privacy-policy";
-        $this->set(compact("canonicalUrl"));
+        $this->set(compact("canonicalUrl","pageTitle"));
     }
 
     public function subscribeMe(){
