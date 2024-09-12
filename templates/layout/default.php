@@ -12,6 +12,12 @@
         content="<?php if(isset($keywords)){echo $keywords;}else{?>SEO - Digital Marketing Agency<?php }?>">
     <link rel="canonical" href="https://www.onmepro.com/" />
 
+
+    <link rel="canonical" href="https://www.onmepro.com/terms-of-use" />
+    <link rel="canonical" href="https://www.onmepro.com/privacy-policy" />
+    <link rel="canonical" href="https://www.onmepro.com/blog/evolution-timeline-of-seo-smo-and-ppc" />
+    <link rel="canonical" href="https://www.onmepro.com/blog/future-of-digital-marketing-ai-and-more" /> 
+
     <!--=====FAB ICON=======-->
     <link rel="icon" href="<?php echo HTTP_ROOT;?>img/favicon.ico" type="image/x-icon">
 
@@ -51,7 +57,7 @@
     <div class="preloader preloader5">
         <div class="loading-container">
             <div class="loading"></div>
-            <div id="loading-icon"><img src="assets/img/logo/logo.png" alt=""></div>
+            <div id="loading-icon"><img src="<?php echo HTTP_ROOT;?>assets/img/logo/logo.png" alt=""></div>
         </div>
     </div>
     <!--===== PRELOADER ENDS =======-->
