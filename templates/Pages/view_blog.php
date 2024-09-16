@@ -64,11 +64,11 @@
                         <div class="social">
                             <h4>Social:</h4>
                             <ul>
-                                <li><a href="#"><img src="<?php echo HTTP_ROOT;?>assets/img/icons/facebook.svg"
+                                <!-- <li><a href="#"><img src="<?php echo HTTP_ROOT;?>assets/img/icons/facebook.svg"
                                             alt=""></a></li>
                                 <li><a href="#"><img src="<?php echo HTTP_ROOT;?>assets/img/icons/instagram.svg"
-                                            alt=""></a></li>
-                                <li><a href="#"><img src="<?php echo HTTP_ROOT;?>assets/img/icons/linkedin.svg"
+                                            alt=""></a></li> -->
+                                <li><a target="_blank" href="https://www.linkedin.com/company/onmepro/"><img src="<?php echo HTTP_ROOT;?>assets/img/icons/linkedin.svg"
                                             alt=""></a></li>
                             </ul>
                         </div>

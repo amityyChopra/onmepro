@@ -13,10 +13,12 @@ if (PHP_INT_SIZE !== 8) {
 }
 
 $missingExtensions = array();
+extension_loaded('dom') || $missingExtensions[] = 'dom';
 extension_loaded('intl') || $missingExtensions[] = 'intl';
 extension_loaded('json') || $missingExtensions[] = 'json';
 extension_loaded('openssl') || $missingExtensions[] = 'openssl';
 extension_loaded('pcre') || $missingExtensions[] = 'pcre';
+extension_loaded('xml') || $missingExtensions[] = 'xml';
 
 if ($missingExtensions) {
     $issues[] = 'Your Composer dependencies require the following PHP extensions to be installed: ' . implode(', ', $missingExtensions) . '.';
