@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php if(isset($pageTitle)){echo $pageTitle;}else{?>ONMEPRO - Digital Marketing Agency<?php }?></title>
+    <title><?php if(isset($pageTitle)){echo $pageTitle;}else{?>ONMEPRO - Leading SEO and Digital Marketing Company<?php }?></title>
 
     <meta name="description"
-        content="<?php if(isset($metaDescription)){echo $metaDescription;}else{?>SEO - Digital Marketing Agency<?php }?>">
+        content="<?php if(isset($metaDescription)){echo $metaDescription;}else{?>ONMEPRO is a leading SEO and digital marketing company, dedicated to enhancing your online presence and driving results through tailored strategies Get started!<?php }?>">
     <meta name="keywords"
-        content="<?php if(isset($keywords)){echo $keywords;}else{?>SEO - Digital Marketing Agency<?php }?>">
+        content="<?php if(isset($keywords)){echo $keywords;}else{?>ONMEPRO - Leading SEO and Digital Marketing Company<?php }?>">
     <link rel="canonical" href="<?php if(isset($canonicalUrl)){echo $canonicalUrl;}else{?>https://www.onmepro.com/<?php }?>" />
 
     <!--=====FAB ICON=======-->
@@ -27,6 +27,25 @@
     <link rel="stylesheet" href="<?php echo HTTP_ROOT;?>assets/css/plugins/nice-select.css">
     <link rel="stylesheet" href="<?php echo HTTP_ROOT;?>assets/css/main.css">
     <link rel="stylesheet" href="<?php echo HTTP_ROOT;?>assets/css/intlTelInput.css">
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            "name": "ONMEPRO",
+            "url": "https://www.onmepro.com/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "{search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        }
+    </script>
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="ONMEPRO: Leading SEO and Digital Marketing Company" />
+<meta property="og:description" content="ONMEPRO is a leading SEO and digital marketing company, dedicated to enhancing your online presence and driving results through tailored strategies Get started!." />
+<meta property="og:url" content="https://www.onmepro.com/" />
 
 
     <!--=====  JS SCRIPT LINK =======-->
