@@ -46,6 +46,7 @@
     <meta property="og:title" content="ONMEPRO: Leading SEO and Digital Marketing Company" />
     <meta property="og:description" content="ONMEPRO is a leading SEO and digital marketing company, dedicated to enhancing your online presence and driving results through tailored strategies Get started!." />
     <meta property="og:url" content="https://www.onmepro.com/" />
+    <meta property="og:image" content="https://opengraph.b-cdn.net/production/images/60ea500f-b46d-4b02-8322-926f3d055e4b.png?token=_v6IOJJwwIMSye3IWTC4MoIG3KYLApQX94BZBvnTLso&height=820&width=1120&expires=33262733504">
 
 
     <!--=====  JS SCRIPT LINK =======-->
