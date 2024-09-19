@@ -42,10 +42,10 @@
         }
     </script>
 
-<meta property="og:type" content="website" />
-<meta property="og:title" content="ONMEPRO: Leading SEO and Digital Marketing Company" />
-<meta property="og:description" content="ONMEPRO is a leading SEO and digital marketing company, dedicated to enhancing your online presence and driving results through tailored strategies Get started!." />
-<meta property="og:url" content="https://www.onmepro.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ONMEPRO: Leading SEO and Digital Marketing Company" />
+    <meta property="og:description" content="ONMEPRO is a leading SEO and digital marketing company, dedicated to enhancing your online presence and driving results through tailored strategies Get started!." />
+    <meta property="og:url" content="https://www.onmepro.com/" />
 
 
     <!--=====  JS SCRIPT LINK =======-->
