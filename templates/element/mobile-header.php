@@ -4,7 +4,7 @@
             <div class="mobile-header-elements">
                 <div class="mobile-logo">
                     <a href="<?php echo HTTP_ROOT;?>"><img style="width:35%"
-                            src="<?php echo HTTP_ROOT;?>assets/img/logo/logo_mobile.png" alt=""></a>
+                            src="<?php echo HTTP_ROOT;?>assets/img/logo/logo_mobile.png" alt="Online Media Promotion"></a>
                 </div>
                 <div class="mobile-nav-icon dots-menu">
                     <i class="fa-solid fa-bars"></i>
@@ -17,7 +17,7 @@
 <div class="mobile-sidebar mobile-sidebar2">
     <div class="logosicon-area">
         <div class="logos">
-            <img style="width:35%" src="<?php echo HTTP_ROOT;?>assets/img/logo/logo_mobile.png" alt="">
+            <img style="width:35%" src="<?php echo HTTP_ROOT;?>assets/img/logo/logo_mobile.png" alt="Online Media Promotion">
         </div>
         <div class="menu-close">
             <i class="fa-solid fa-xmark"></i>

@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-lg-3 col-md-6">
                 <div class="footer-logo-area">
-                    <img style="width:40%" src="<?php echo HTTP_ROOT;?>assets/img/logo/logo.png" alt="">
+                    <img style="width:40%" src="<?php echo HTTP_ROOT;?>assets/img/logo/logo.png" alt="onmepro">
                     <p>A premier digital marketing agency with over 18 years of experience in online promotion, SEO
                         services, SMO strategies, PPC campaigns, and content marketing.
                     </p>

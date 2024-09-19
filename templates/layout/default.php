@@ -71,7 +71,7 @@
     <div class="preloader preloader5">
         <div class="loading-container">
             <div class="loading"></div>
-            <div id="loading-icon"><img src="<?php echo HTTP_ROOT;?>assets/img/logo/logo.png" alt=""></div>
+            <div id="loading-icon"><img src="<?php echo HTTP_ROOT;?>assets/img/logo/logo.png" alt="ONMEPRO"></div>
         </div>
     </div>
     <!--===== PRELOADER ENDS =======-->

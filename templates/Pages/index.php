@@ -30,7 +30,7 @@
                     <img src="assets/img/elements/star5.png" alt="" class="star5 keyframe5">
                     <div class="img1">
                         <img src="assets/img/bg/header-imgbg3.png" alt="" class="header-imgbg2">
-                        <img src="<?php echo HTTP_ROOT;?>img/hero-image.png" alt="">
+                        <img src="<?php echo HTTP_ROOT;?>img/hero-image.png" alt="Digital Marketing Solutions">
                     </div>
                 </div>
             </div>
@@ -51,22 +51,22 @@
             <div class="col-lg-10">
                 <div class="slider-images-area owl-carousel">
                     <div class="img1">
-                        <img src="<?php echo HTTP_ROOT;?>img/logo01.png" alt="">
+                        <img src="<?php echo HTTP_ROOT;?>img/logo01.png" alt="Veer Basmati Rice">
                     </div>
                     <div class="img1">
-                        <img src="<?php echo HTTP_ROOT;?>img/logo2.png" alt="">
+                        <img src="<?php echo HTTP_ROOT;?>img/logo2.png" alt="American EduGlobal School Consortia">
                     </div>
                     <div class="img1">
-                        <img src="<?php echo HTTP_ROOT;?>img/logo3.png" alt="">
+                        <img src="<?php echo HTTP_ROOT;?>img/logo3.png" alt="Adactin">
                     </div>
                     <div class="img1">
-                        <img src="<?php echo HTTP_ROOT;?>img/logo4.png" alt="">
+                        <img src="<?php echo HTTP_ROOT;?>img/logo4.png" alt="Crestech Global">
                     </div>
                     <div class="img1">
-                        <img src="<?php echo HTTP_ROOT;?>img/logo5.png" alt="">
+                        <img src="<?php echo HTTP_ROOT;?>img/logo5.png" alt="Raajkart">
                     </div>
                     <div class="img1">
-                        <img src="<?php echo HTTP_ROOT;?>img/logo6.png" alt="">
+                        <img src="<?php echo HTTP_ROOT;?>img/logo6.png" alt="NAV IT Consulting">
                     </div>
                 </div>
             </div>
@@ -83,7 +83,7 @@
         <div class="row align-items-center">
             <div class="col-lg-6">
                 <div class="about-images-area reveal">
-                    <img src="<?php echo HTTP_ROOT;?>img/aboutus.png" alt="">
+                    <img src="<?php echo HTTP_ROOT;?>img/aboutus.png" alt="Digital Marketing Agency"">
                 </div>
             </div>
             <div class="col-lg-6">
@@ -119,7 +119,7 @@
                     </div>
                     <div class="images-area" data-aos="fade-left" data-aos-duretion="1200">
                         <div class="img">
-                            <img src="<?php echo HTTP_ROOT;?>assets/img/aritone-logo.png" alt="">
+                            <img src="<?php echo HTTP_ROOT;?>assets/img/aritone-logo.png" alt="Aritone Global Ventures Ltd">
                         </div>
                         <div class="content-area" data-aos="fade-left" data-aos-duretion="1200">
                             <p data-aos="fade-left" data-aos-duretion="1000">Whether you're a start-up looking to build
@@ -155,7 +155,7 @@
             <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-duretion="800">
                 <div class="service2-boxarea">
                     <div class="icons">
-                        <img src="<?php echo HTTP_ROOT;?>assets/img/<?php echo $service["img_file"]?>" alt="">
+                        <img src="<?php echo HTTP_ROOT;?>assets/img/<?php echo $service["img_file"]?>" alt="<?php echo $service["service_title"]?>">
                     </div>
                     <div class="space32"></div>
                     <div class="content">
@@ -196,7 +196,7 @@
         <div class="row align-items-center">
             <div class="col-lg-6">
                 <div class="work-images reveal">
-                    <img src="<?php echo HTTP_ROOT;?>img/why-choose-us.png" alt="">
+                    <img src="<?php echo HTTP_ROOT;?>img/why-choose-us.png" alt="Digital marketing Services">
                 </div>
             </div>
             <div class="col-lg-1"></div>
@@ -277,7 +277,7 @@
             <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-duretion="1200">
                 <div class="blog2-author-boxarea">
                     <div class="img1">
-                        <img src="<?php echo HTTP_ROOT;?>img/<?php echo $blog["image"]?>" alt="">
+                        <img src="<?php echo HTTP_ROOT;?>img/<?php echo $blog["image"]?>" alt="<?php echo $blog["blog_title"];?>">
                     </div>
                     <div class="blog-content">
                         <a href="#" class="date"><img src="assets/img/icons/calender1.svg"
@@ -329,7 +329,7 @@
                                 <img src="assets/img/elements/elements8.png" alt="" class="elements6 aniamtion-key-2">
                                 <img src="assets/img/elements/star6.png" alt="" class="elements7 keyframe5">
                                 <img src="assets/img/bg/cta-bg3.png" alt="" class="bg1 aniamtion-key-5">
-                                <img src="<?php echo HTTP_ROOT;?>img/cta-img1.png" alt="" class="cta-img1">
+                                <img src="<?php echo HTTP_ROOT;?>img/cta-img1.png" alt="Online Presence" class="cta-img1">
                             </div>
                         </div>
                     </div>
