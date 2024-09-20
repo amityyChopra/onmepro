@@ -30,15 +30,38 @@
 
     <script type="application/ld+json">
         {
-            "@context": "https://schema.org/",
-            "@type": "WebSite",
-            "name": "ONMEPRO",
+            "@context": "https://schema.org",
+            "@type": "ProfessionalService",
+            "name": "Online Media Promotion",
+            "image": "https://www.onmepro.com/assets/img/logo/logo.png",
+            "@id": "",
             "url": "https://www.onmepro.com/",
-            "potentialAction": {
-                "@type": "SearchAction",
-                "target": "{search_term_string}",
-                "query-input": "required name=search_term_string"
-            }
+            "telephone": "+91 9811205120",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Ashok Vihar, Phase - 1",
+                "addressLocality": "Delhi",
+                "postalCode": "110052",
+                "addressCountry": "IN"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 28.6916606,
+                "longitude": 77.16720939999999
+            },
+            "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                "Tuesday",
+                "Monday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday"
+                ],
+                "opens": "10:00",
+                "closes": "18:00"
+            } 
         }
     </script>
 
