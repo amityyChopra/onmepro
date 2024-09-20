@@ -30,6 +30,19 @@
 
     <script type="application/ld+json">
         {
+            "@context": "https://schema.org/",
+            "@type": "WebSite",
+            "name": "ONMEPRO",
+            "url": "https://www.onmepro.com/",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "{search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        }
+    </script>
+    <script type="application/ld+json">
+        {
             "@context": "https://schema.org",
             "@type": "ProfessionalService",
             "name": "Online Media Promotion",
@@ -64,7 +77,6 @@
             } 
         }
     </script>
-
     <meta property="og:type" content="website" />
     <meta property="og:title" content="ONMEPRO: Leading SEO and Digital Marketing Company" />
     <meta property="og:description" content="ONMEPRO is a leading SEO and digital marketing company, dedicated to enhancing your online presence and driving results through tailored strategies Get started!." />
