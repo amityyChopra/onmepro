@@ -1,8 +1,8 @@
 <div class="hero3-section-area">
-    <img src="assets/img/elements/star2.png" alt="" class="star3 keyframe5">
-    <img src="assets/img/elements/star2.png" alt="" class="star4 keyframe5">
-    <img src="assets/img/bg/header-bg2.png" alt="" class="header-bg2">
-    <img src="assets/img/bg/header-bg3.png" alt="" class="header-bg3">
+    <img src="assets/img/elements/star2.png" alt="onmepro" class="star3 keyframe5">
+    <img src="assets/img/elements/star2.png" alt="onmepro" class="star4 keyframe5">
+    <img src="assets/img/bg/header-bg2.png" alt="onmepro" class="header-bg2">
+    <img src="assets/img/bg/header-bg3.png" alt="onmepro" class="header-bg3">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6">
@@ -26,10 +26,10 @@
             <div class="col-lg-1"></div>
             <div class="col-lg-5">
                 <div class="header-images-area" data-aos="zoom-in" data-aos-duretion="1000">
-                    <img src="assets/img/elements/elements8.png" alt="" class="elements6 aniamtion-key-1">
-                    <img src="assets/img/elements/star5.png" alt="" class="star5 keyframe5">
+                    <img src="assets/img/elements/elements8.png" alt="onmepro" class="elements6 aniamtion-key-1">
+                    <img src="assets/img/elements/star5.png" alt="onmepro" class="star5 keyframe5">
                     <div class="img1">
-                        <img src="assets/img/bg/header-imgbg3.png" alt="" class="header-imgbg2">
+                        <img src="assets/img/bg/header-imgbg3.png" alt="onmepro" class="header-imgbg2">
                         <img src="<?php echo HTTP_ROOT;?>img/hero-image.png" alt="Digital Marketing Solutions">
                     </div>
                 </div>
@@ -77,8 +77,8 @@
 
 <!--===== ABOUT AREA STARTS =======-->
 <div class="about3-section-area sp1" id="about-us">
-    <img src="<?php echo HTTP_ROOT;?>assets/img/bg/about-bg1.png" alt="" class="about-bg1">
-    <img src="<?php echo HTTP_ROOT;?>assets/img/bg/about-bg2.png" alt="" class="about-bg2">
+    <img src="<?php echo HTTP_ROOT;?>assets/img/bg/about-bg1.png" alt="onmepro" class="about-bg1">
+    <img src="<?php echo HTTP_ROOT;?>assets/img/bg/about-bg2.png" alt="onmepro" class="about-bg2">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6">
@@ -100,19 +100,19 @@
                     <h3>Aritone’s Edge :</h3>
                     <div class="list-area" data-aos="fa-angle-left" data-aos-duretion="1100">
                         <ul>
-                            <li><img src="<?php echo HTTP_ROOT;?>assets/img/icons/check1.svg" alt="">Powered by
+                            <li><img src="<?php echo HTTP_ROOT;?>assets/img/icons/check1.svg" alt="onmepro">Powered by
                                 technology
                             </li>
-                            <li><img src="<?php echo HTTP_ROOT;?>assets/img/icons/check1.svg" alt="">Commitment to
+                            <li><img src="<?php echo HTTP_ROOT;?>assets/img/icons/check1.svg" alt="onmepro">Commitment to
                                 quality
                             </li>
 
                         </ul>
                         <ul>
 
-                            <li><img src="<?php echo HTTP_ROOT;?>assets/img/icons/check1.svg" alt="">Delivering with
+                            <li><img src="<?php echo HTTP_ROOT;?>assets/img/icons/check1.svg" alt="onmepro">Delivering with
                                 excellence</li>
-                            <li><img src="<?php echo HTTP_ROOT;?>assets/img/icons/check1.svg" alt="">Diversified domain
+                            <li><img src="<?php echo HTTP_ROOT;?>assets/img/icons/check1.svg" alt="onmepro">Diversified domain
                                 experience
                             </li>
                         </ul>
@@ -204,7 +204,7 @@
                 <div class="all-boxes-area">
                     <div class="work-process-area" data-aos="fade-up" data-aos-duretion="800">
                         <div class="icons">
-                            <img src="<?php echo HTTP_ROOT;?>assets/img/icons/works-icon1.png" alt="">
+                            <img src="<?php echo HTTP_ROOT;?>assets/img/icons/works-icon1.png" alt="onmepro">
                         </div>
                         <div class="content-area">
                             <a href="javascript:void(0)">Tailored Strategic Solution</a>
@@ -216,7 +216,7 @@
                     <div class="space30"></div>
                     <div class="work-process-area work2" data-aos="fade-up" data-aos-duretion="1000">
                         <div class="icons">
-                            <img src="<?php echo HTTP_ROOT;?>assets/img/icons/works-icon2.png" alt="">
+                            <img src="<?php echo HTTP_ROOT;?>assets/img/icons/works-icon2.png" alt="onmepro">
                         </div>
                         <div class="content-area">
                             <a href="javascript:void(0)">Transparent Communication</a>
@@ -228,7 +228,7 @@
                     <div class="space30"></div>
                     <div class="work-process-area" data-aos="fade-up" data-aos-duretion="1200">
                         <div class="icons">
-                            <img src="<?php echo HTTP_ROOT;?>assets/img/icons/works-icon3.png" alt="">
+                            <img src="<?php echo HTTP_ROOT;?>assets/img/icons/works-icon3.png" alt="onmepro">
                         </div>
                         <div class="content-area">
                             <a href="javascript:void(0)">Multiple Level Monitoring</a>
@@ -240,7 +240,7 @@
                     <div class="space30"></div>
                     <div class="work-process-area work2" data-aos="fade-up" data-aos-duretion="1000">
                         <div class="icons">
-                            <img src="<?php echo HTTP_ROOT;?>assets/img/icons/works-icon2.png" alt="">
+                            <img src="<?php echo HTTP_ROOT;?>assets/img/icons/works-icon2.png" alt="onmepro">
                         </div>
                         <div class="content-area">
                             <a href="javascript:void(0)">Proven Track Record</a>
@@ -259,8 +259,8 @@
 
 <!--===== BLOG AREA STARTS =======-->
 <div class="blog3-section-area sp2" id="blog">
-    <img src="assets/img/bg/about-bg1.png" alt="" class="about-bg1">
-    <img src="assets/img/bg/about-bg2.png" alt="" class="about-bg2">
+    <img src="assets/img/bg/about-bg1.png" alt="onmepro" class="about-bg1">
+    <img src="assets/img/bg/about-bg2.png" alt="onmepro" class="about-bg2">
     <div class="container">
         <div class="row">
             <div class="col-lg-7 m-auto">
@@ -281,7 +281,7 @@
                     </div>
                     <div class="blog-content">
                         <a href="#" class="date"><img src="assets/img/icons/calender1.svg"
-                                alt=""><?php echo date("d F Y",strtotime($blog["date_added"]))?></a>
+                                alt="onmepro"><?php echo date("d F Y",strtotime($blog["date_added"]))?></a>
                         <a href="<?php echo HTTP_ROOT;?>blog/<?php echo $blog["seo_url"]?>" class="head">
                             <?php echo $blog["blog_title"];?></a>
                         <p><?php echo substr(strip_tags($blog["content"]),0,100);?>...</p>
@@ -326,9 +326,9 @@
                         <div class="col-lg-2"></div>
                         <div class="col-lg-4">
                             <div class="images">
-                                <img src="assets/img/elements/elements8.png" alt="" class="elements6 aniamtion-key-2">
-                                <img src="assets/img/elements/star6.png" alt="" class="elements7 keyframe5">
-                                <img src="assets/img/bg/cta-bg3.png" alt="" class="bg1 aniamtion-key-5">
+                                <img src="assets/img/elements/elements8.png" alt="onmepro" class="elements6 aniamtion-key-2">
+                                <img src="assets/img/elements/star6.png" alt="onmepro" class="elements7 keyframe5">
+                                <img src="assets/img/bg/cta-bg3.png" alt="onmepro" class="bg1 aniamtion-key-5">
                                 <img src="<?php echo HTTP_ROOT;?>img/cta-img1.png" alt="Online Presence" class="cta-img1">
                             </div>
                         </div>

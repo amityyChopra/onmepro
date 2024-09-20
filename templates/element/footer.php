@@ -9,14 +9,9 @@
                     </p>
                     <ul>
                         <li><a target="_blank" href="https://www.linkedin.com/company/onmepro"><img
-                                    src="<?php echo HTTP_ROOT;?>assets/img/icons/linkedin2.svg" alt=""></a>
+                                    src="<?php echo HTTP_ROOT;?>assets/img/icons/linkedin2.svg" alt="onmepro"></a>
                         </li>
-                        <!-- <li><a href="#"><img src="<?php echo HTTP_ROOT;?>assets/img/icons/facebook3.svg" alt=""></a>
-                        </li>
-                        <li><a href="#"><img src="<?php echo HTTP_ROOT;?>assets/img/icons/instagram3.svg" alt=""></a>
-                        </li>
-                        
-                        <li><a href="#"><img src="<?php echo HTTP_ROOT;?>assets/img/icons/twitter2.svg" alt=""></a></li> -->
+                      
                     </ul>
                 </div>
             </div>
@@ -39,13 +34,13 @@
                     <h3>Get in touch</h3>
                     <ul>
                         <li><a href="mailto:info@onmepro.com"><img
-                                    src="<?php echo HTTP_ROOT;?>assets/img/icons/email.svg" alt=""><span>
+                                    src="<?php echo HTTP_ROOT;?>assets/img/icons/email.svg" alt="onmepro"><span>
                                     info@onmepro.com</span></a></li>
                         <li><a href="#"><img src="<?php echo HTTP_ROOT;?>assets/img/icons/location.svg"
-                                    alt=""><span>Ashok Vihar, Phase - 1,
+                                    alt="onmepro"><span>Ashok Vihar, Phase - 1,
                                     Delhi 110052, India</span></a></li>
                         <li><a href="tel:+91 9811 205 120"><img src="<?php echo HTTP_ROOT;?>assets/img/icons/phone.svg"
-                                    alt=""><span>+91
+                                    alt="onmepro"><span>+91
                                     9811205120
                                 </span></a></li>
                     </ul>
