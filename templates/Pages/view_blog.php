@@ -31,7 +31,7 @@
                                         src="<?php echo HTTP_ROOT;?>assets/img/icons/calender1.svg"
                                         alt=""><?php echo date("d F Y",strtotime($recentPost["date_added"]));?></a>
                                 <a href="<?php echo HTTP_ROOT."blog/".$recentPost["seo_url"]?>"
-                                    class="head"><?php echo substr(0,150,$recentPost["blog_title"]);?></a>
+                                    class="head"><?php echo substr($recentPost["blog_title"],0,150);?></a>
                             </div>
                         </div>
                         <?php }?>
