@@ -117,4 +117,11 @@
         </div>
     </div>
 </div>
+<style>
+    .blog-auhtor-sidebar-area ul li {
+        list-style: disc;
+        color: var(--ztc-text-text-3);
+        margin-bottom: 2%;
+    }
+</style>
 <!--===== CTA AREA ENDS =======-->
