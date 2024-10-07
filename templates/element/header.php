@@ -5,7 +5,7 @@
                 <div class="col-lg-12">
                     <div class="header-elements">
                         <div class="site-logo">
-                            <a href="<?php echo HTTP_ROOT;?>"><img style="width:35%"
+                            <a href="<?php echo rtrim(HTTP_ROOT,"/");?>"><img style="width:35%"
                                     src="<?php echo HTTP_ROOT;?>assets/img/logo/logo.png" alt="Online Media Promotion"></a>
                         </div>
                         <div class="main-menu">
