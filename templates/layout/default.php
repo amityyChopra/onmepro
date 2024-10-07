@@ -9,7 +9,7 @@
     <meta name="description"
         content="<?php if(isset($metaDescription)){echo $metaDescription;}else{?>ONMEPRO is a leading SEO and digital marketing company, dedicated to enhancing your online presence and driving results through tailored strategies Get started!<?php }?>">
     <meta name="keywords"
-        content="<?php if(isset($keywords)){echo $keywords;}else{?>ONMEPRO - Leading SEO and Digital Marketing Company<?php }?>">
+        content="<?php if(isset($keywords)){echo $keywords;}else{?>Digital Marketing Company, Digital Marketing Agency, Online Media Promotion, Internet Marketing Company, SEO and digital marketing company, search engine optimization in digital marketing<?php }?>">
     <link rel="canonical" href="<?php if(isset($canonicalUrl)){echo $canonicalUrl;}else{?>https://www.onmepro.com/<?php }?>" />
 
     <!--=====FAB ICON=======-->
